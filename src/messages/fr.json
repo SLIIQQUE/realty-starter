@@ -1,0 +1,262 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "listings": "Propriétés",
+    "neighbourhoods": "Quartiers",
+    "resources": "Ressources",
+    "insights": "Analyses",
+    "contact": "Contact",
+    "bookConsultation": "Réserver une consultation",
+    "langEn": "EN",
+    "langFr": "FR"
+  },
+  "footer": {
+    "pages": "Pages",
+    "legal": "Légal",
+    "contact": "Contact",
+    "linkLabels": {
+      "home": "Accueil",
+      "listings": "Propriétés",
+      "sold": "Vendues",
+      "neighbourhoods": "Quartiers",
+      "about": "À propos",
+      "reviews": "Avis",
+      "resources": "Ressources",
+      "insights": "Analyses",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "legalLabels": {
+      "privacyPolicy": "Politique de confidentialité",
+      "termsOfUse": "Conditions d'utilisation",
+      "accessibility": "Accessibilité"
+    },
+    "newsletterCopy": "Des idées de propriétés et des notes de design de SLIIQQUE, sans l'encombrement habituel d'une boîte courriel.",
+    "emailPlaceholder": "vous@courriel.com",
+    "emailAriaLabel": "Adresse courriel",
+    "subscribe": "S'abonner",
+    "sending": "Envoi...",
+    "consentPrefix": "J'accepte de recevoir des courriels de",
+    "consentSuffix": "et j'ai lu la",
+    "privacyPolicy": "Politique de confidentialité",
+    "lettersTalk": "Discutons",
+    "ctaHeading": "Vous voulez un site comme celui-ci pour votre entreprise?",
+    "ctaButton": "Parler à SLIIQQUE Studio",
+    "designedBy": "Conçu et réalisé par"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Portefeuille concept Toronto et GTA · 1,8 M$ – 6,5 M$ CAD",
+      "headlineMain": "Vous pensez ne pas pouvoir acheter dans le Grand Toronto?",
+      "headlineEm": "Détrompez-vous.",
+      "lead": "{name} aide les acheteurs d'une première propriété, les nouveaux arrivants et les petits investisseurs à comprendre le marché du Grand Toronto : des chiffres clairs, des réponses honnêtes, aucune pression.",
+      "ctaBrowse": "Voir les propriétés",
+      "ctaConsult": "Consultation gratuite",
+      "proofStrong": "Des chiffres clairs, sans détour",
+      "proofSpan": "sans jargon, sans pression",
+      "featuredBadge": "En vedette",
+      "statIncludesLabel": "Ce concept comprend",
+      "statIncludesSuffix": "+ fonctionnalités",
+      "statIncludesNote": "Recherche, vue carte, favoris, comparaison et calculateurs canadiens",
+      "statBuiltLabel": "Réalisé avec",
+      "statBuiltNote": "Généré statiquement autant que possible, routes API pour les formulaires"
+    },
+    "trust": {
+      "brokerage": "Courtier inscripteur (exemple)",
+      "years": "Années de service dans le Grand Toronto (exemple)",
+      "homesSold": "Propriétés vendues (exemple)",
+      "licensed": "REALTOR® agréé en Ontario (exemple)"
+    },
+    "valuation": {
+      "eyebrow": "Combien vaut ma propriété?",
+      "headingMain": "Une estimation réfléchie, avec un",
+      "headingEm": "humain derrière.",
+      "placeholder": "Entrez l'adresse de votre propriété",
+      "aria": "Adresse de la propriété",
+      "submit": "Démarrer mon évaluation gratuite",
+      "supporting": "Pas de chiffre automatique. Priya examine elle-même les comparables récents de votre quartier, tient compte de ce qu'une photo ne montre pas, puis vous envoie une fourchette réfléchie, habituellement en un jour ouvrable.",
+      "reviewedBy": "Examiné personnellement par",
+      "badge1": "Gratuit, sans engagement",
+      "badge2": "Comparé à la main, pas par un algorithme",
+      "badge3": "Réponse en un jour ouvrable"
+    },
+    "featured": {
+      "eyebrow": "Propriétés vedettes",
+      "headingMain": "Des propriétés qui se démarquent avant même la",
+      "headingEm": "visite.",
+      "viewAll": "Voir toutes les propriétés",
+      "scheduleViewing": "Planifier une visite"
+    },
+    "how": {
+      "eyebrow": "Comment ça fonctionne",
+      "heading": "Un parcours simple du premier appel à la clôture.",
+      "lead": "Aucune décision précipitée, aucun délai inutile. Le concept garde la prochaine étape claire et traite chaque détail avec soin.",
+      "noteChip": "Déroulement du concept",
+      "noteHeading": "Aucune décision précipitée. Aucune transition brouillonne.",
+      "noteBody": "Chaque étape est expliquée avant qu'elle ne se produise, et traitée avec soin pendant qu'elle se déroule.",
+      "steps": [
+        { "title": "Premier échange", "body": "Partagez ce que vous voulez, ce qu'il faut éviter, et le moment idéal pour déménager. Aucune pression, aucun engagement." },
+        { "title": "Plan personnalisé", "body": "Recevez une courte liste, une fourchette de prix de vente, ou un plan de préparation réaliste et adapté à votre échéancier." },
+        { "title": "Visites soignées", "body": "Seuls les acheteurs sérieux et les propriétés pertinentes figurent à l'agenda. Chaque visite est préparée, jamais improvisée." },
+        { "title": "Clôture maîtrisée", "body": "Les offres, inspections et conditions finales sont gérées avec une attention constante jusqu'au bon résultat." }
+      ]
+    },
+    "split": {
+      "heading": "Peu importe de quel côté de la transaction vous êtes.",
+      "buyingEyebrow": "Achat",
+      "buyingHeading": "Une sélection bâtie autour de vos besoins réels.",
+      "buyingBody": "Recherche, filtres, vue carte, favoris sauvegardés et calculateur hypothécaire, accompagnés de conseils honnêtes.",
+      "buyingCta": "Commencer à acheter",
+      "sellingEyebrow": "Vente",
+      "sellingHeading": "Un plan de prix et de mise en marché avant la première visite.",
+      "sellingBody": "Une évaluation révisée par une personne, une liste de préparation, et une option de vente privée lorsque la discrétion compte.",
+      "sellingCta": "Commencer à vendre"
+    },
+    "neighbourhoods": {
+      "headingMain": "Achetez la propriété, et la vie",
+      "headingEm": "qui va avec.",
+      "lead": "Le concept couvre six quartiers de Toronto, chacun avec sa propre page de contexte : temps de déplacement, écoles, et l'ambiance réelle de la rue.",
+      "forestHill": "Terrains en ravin et le meilleur secteur scolaire de la ville",
+      "yorkville": "Boutiques chics, galeries d'art, hôtels cinq étoiles",
+      "beaches": "La vie en bord de promenade, un rythme plus calme au bord du lac"
+    },
+    "about": {
+      "eyebrowPrefix": "À propos de ",
+      "headingMain": "Un service immobilier chaleureux et sans détour, pensé autour de",
+      "headingEm": "votre échéancier.",
+      "lead": "{name} aide les acheteurs d'une première propriété, les nouveaux arrivants et les petits investisseurs à s'y retrouver dans le marché du Grand Toronto, des condos de Liberty Village aux maisons jumelées de Leslieville, avec des chiffres clairs, des réponses honnêtes, et des évaluations qui commencent par une vraie conversation, pas une estimation automatisée.",
+      "miniNeighbourhoods": "Quartiers couverts",
+      "miniProperties": "Propriétés d'exemple",
+      "miniYears": "Années de service dans le Grand Toronto",
+      "cta": "Lire l'histoire complète"
+    },
+    "sales": {
+      "eyebrow": "Ventes récentes",
+      "headingMain": "Ventes récentes,",
+      "headingEm": "des chiffres clairs.",
+      "viewSold": "Voir les propriétés vendues",
+      "soldTag": "Vendu"
+    },
+    "testimonials": {
+      "eyebrow": "Ce que disent nos clients",
+      "heading": "Témoignages d'acheteurs et de vendeurs.",
+      "buyer": "Acheteur",
+      "seller": "Vendeur",
+      "readAll": "Voir tous les avis"
+    },
+    "insights": {
+      "eyebrow": "Analyses",
+      "heading": "Notes de marché, pour des décisions réfléchies.",
+      "viewAll": "Voir toutes les analyses"
+    },
+    "valuationCta": {
+      "eyebrow": "Vous pensez vendre?",
+      "heading": "Combien vaut votre propriété aujourd'hui?",
+      "lead": "Une estimation brève, révisée par une personne : aucun chiffre automatisé instantané, aucune obligation de mise en vente.",
+      "cardEyebrow": "Évaluation gratuite",
+      "cardHeading": "Une réponse en moins d'un jour ouvrable.",
+      "cardBody": "Partagez quelques détails sur votre propriété et {firstName} vous recontactera personnellement.",
+      "button": "Demander mon évaluation"
+    },
+    "faqPreview": {
+      "eyebrow": "Questions",
+      "heading": "À propos de ce concept.",
+      "lead": "Si votre question ne figure pas ici, consultez la FAQ complète ou contactez-nous directement.",
+      "button": "Voir toutes les questions"
+    },
+    "contactSection": {
+      "eyebrow": "Restons en contact",
+      "headingTemplate": "Contactez {name} directement.",
+      "callText": "Appel / Texto",
+      "emailText": "Courriel",
+      "officeText": "Bureau",
+      "button": "Envoyer un message"
+    }
+  },
+  "contact": {
+    "eyebrow": "Restons en contact",
+    "headingMain": "Parlons de votre",
+    "headingEm": "déménagement.",
+    "leadTemplate": "Que vous achetiez, vendiez, ou soyez simplement curieux de connaître la valeur de votre propriété, dites à {name} ce que vous recherchez : par appel, texto, ou le formulaire ci-dessous, selon votre préférence.",
+    "officeDetails": "Détails du bureau",
+    "officeLabel": "Bureau",
+    "hoursLabel": "Heures",
+    "phoneLabel": "Téléphone / texto",
+    "privacyStrong": "Votre vie privée est protégée",
+    "privacyText": "Chaque demande est traitée avec discrétion et enregistrée avec votre consentement : consultez la",
+    "privacyLinkText": "Politique de confidentialité",
+    "beforeEyebrow": "Avant de nous contacter",
+    "quickAnswersHeading": "Quelques réponses rapides."
+  },
+  "about": {
+    "eyebrow": "Un concept par SLIIQQUE Studio",
+    "headingMain": "Conçu pour montrer ce qui est",
+    "headingEm": "possible.",
+    "lead": "Ce site est une démonstration de capacité : un site immobilier entièrement construit, et non une simple maquette, pour montrer ce que SLIIQQUE peut réaliser pour un courtier ou un agent réel.",
+    "ctaTalk": "Parler à SLIIQQUE",
+    "ctaListings": "Voir les propriétés",
+    "agentEyebrow": "Votre agent",
+    "titleAt": "chez",
+    "ctaFinalEyebrow": "Travailler avec SLIIQQUE",
+    "ctaFinalHeadingMain": "Commencez par une simple",
+    "ctaFinalHeadingEm": "conversation.",
+    "ctaFinalBody": "Aucun engagement, aucune obligation : dites à SLIIQQUE ce que vous construisez et attendez-vous à une réponse honnête quant à la pertinence du projet.",
+    "ctaFinalTalk": "Parler à SLIIQQUE",
+    "ctaFinalListings": "Voir les propriétés"
+  },
+  "legal": {
+    "notTranslatedNotice": "Cette page n'est pas encore disponible en français. Vous consultez la version anglaise ci-dessous.",
+    "privacyTitleMain": "Politique de",
+    "privacyTitleEm": "confidentialité",
+    "termsTitleMain": "Conditions d'",
+    "termsTitleEm": "utilisation",
+    "accessibilityTitleMain": "Déclaration d'",
+    "accessibilityTitleEm": "accessibilité"
+  },
+  "faq": {
+    "eyebrow": "Questions fréquentes",
+    "headingEm": "Questions",
+    "headingSuffix": "à propos de ce concept.",
+    "lead": "Ce qu'est ce site, comment les outils fonctionnent, et ce que SLIIQQUE peut construire à partir d'ici."
+  },
+  "thankYou": {
+    "backToHome": "Retour à l'accueil",
+    "browseListings": "Voir les propriétés",
+    "contact": {
+      "eyebrow": "Message envoyé",
+      "titleMain": "Merci, nous allons",
+      "titleEm": "vous recontacter.",
+      "body": "L'équipe SLIIQQUE lit chaque message et répond dans un jour ouvrable."
+    },
+    "valuation": {
+      "eyebrow": "Demande reçue",
+      "titleMain": "Votre demande d'évaluation est",
+      "titleEm": "envoyée.",
+      "body": "Ce concept achemine les demandes à une personne, pas à un modèle automatisé. Attendez-vous à une réponse par courriel avec les prochaines étapes."
+    },
+    "viewing": {
+      "eyebrow": "Visite demandée",
+      "titleMain": "Nous allons confirmer votre",
+      "titleEm": "visite.",
+      "body": "Nous vous recontacterons par courriel ou par téléphone sous peu pour confirmer un moment qui vous convient."
+    },
+    "listingEnquiry": {
+      "eyebrow": "Demande envoyée",
+      "titleMain": "Merci pour votre",
+      "titleEm": "intérêt.",
+      "body": "Nous vous enverrons bientôt plus de détails sur cette propriété."
+    },
+    "newsletter": {
+      "eyebrow": "Presque terminé",
+      "titleMain": "Vérifiez votre courriel pour",
+      "titleEm": "confirmer.",
+      "body": "Nous avons envoyé un lien de confirmation à votre boîte de réception : cliquez dessus pour terminer votre inscription. Si vous ne le voyez pas d'ici quelques minutes, vérifiez vos courriels indésirables."
+    },
+    "default": {
+      "eyebrow": "C'est fait",
+      "titleMain": "Merci de nous avoir",
+      "titleEm": "contactés.",
+      "body": "Nous vous recontacterons sous peu."
+    }
+  }
+}

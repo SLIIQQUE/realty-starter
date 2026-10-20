@@ -1,0 +1,262 @@
+{
+  "nav": {
+    "home": "Home",
+    "listings": "Listings",
+    "neighbourhoods": "Neighbourhoods",
+    "resources": "Resources",
+    "insights": "Insights",
+    "contact": "Contact",
+    "bookConsultation": "Book a Consultation",
+    "langEn": "EN",
+    "langFr": "FR"
+  },
+  "footer": {
+    "pages": "Pages",
+    "legal": "Legal",
+    "contact": "Contact",
+    "linkLabels": {
+      "home": "Home",
+      "listings": "Listings",
+      "sold": "Sold",
+      "neighbourhoods": "Neighbourhoods",
+      "about": "About",
+      "reviews": "Reviews",
+      "resources": "Resources",
+      "insights": "Insights",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "legalLabels": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfUse": "Terms of Use",
+      "accessibility": "Accessibility"
+    },
+    "newsletterCopy": "Property concepts and design notes from SLIIQQUE, without the inbox clutter.",
+    "emailPlaceholder": "you@email.com",
+    "emailAriaLabel": "Email address",
+    "subscribe": "Subscribe",
+    "sending": "Sending...",
+    "consentPrefix": "I agree to receive emails from",
+    "consentSuffix": "and have read the",
+    "privacyPolicy": "Privacy Policy",
+    "lettersTalk": "Let's talk",
+    "ctaHeading": "Want a site like this built for your real business?",
+    "ctaButton": "Talk to SLIIQQUE Studio",
+    "designedBy": "Designed and built by"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Toronto & GTA Concept Portfolio · CAD $1.8M–$6.5M",
+      "headlineMain": "Think you can't buy in the GTA?",
+      "headlineEm": "Think again.",
+      "lead": "{name} helps first-time buyers, newcomers, and small investors make sense of the GTA market: real numbers, straight answers, zero pressure.",
+      "ctaBrowse": "Browse Listings",
+      "ctaConsult": "Free Consult",
+      "proofStrong": "Real numbers, real talk",
+      "proofSpan": "no jargon, no pressure",
+      "featuredBadge": "Featured",
+      "statIncludesLabel": "This concept includes",
+      "statIncludesSuffix": "+ features",
+      "statIncludesNote": "Search, map view, favorites, comparison, and Canadian calculators",
+      "statBuiltLabel": "Built with",
+      "statBuiltNote": "Statically generated where possible, API routes for forms"
+    },
+    "trust": {
+      "brokerage": "Brokerage of record (sample)",
+      "years": "Years serving the GTA (sample)",
+      "homesSold": "Homes sold (sample)",
+      "licensed": "Licensed Ontario REALTOR® (sample)"
+    },
+    "valuation": {
+      "eyebrow": "What is my home worth?",
+      "headingMain": "A considered estimate, with a",
+      "headingEm": "human behind it.",
+      "placeholder": "Enter your property address",
+      "aria": "Property address",
+      "submit": "Start my free valuation",
+      "supporting": "No black-box number. Priya reads your street's recent comparables herself, weighs what a listing photo can't show, and sends a considered range, usually within one business day.",
+      "reviewedBy": "Reviewed personally by",
+      "badge1": "Free, no obligation",
+      "badge2": "Compared by hand, not automated",
+      "badge3": "Reply in one business day"
+    },
+    "featured": {
+      "eyebrow": "Featured listings",
+      "headingMain": "Homes with presence before the",
+      "headingEm": "tour begins.",
+      "viewAll": "View All Listings",
+      "scheduleViewing": "Schedule Viewing"
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "heading": "A simple path from first call to closing.",
+      "lead": "No rushed decisions, no unnecessary delays. The concept keeps the next step clear and handles the details with care.",
+      "noteChip": "Concept flow",
+      "noteHeading": "No rushed decisions. No noisy handoff.",
+      "noteBody": "Every step is explained before it happens, and handled with care while it does.",
+      "steps": [
+        { "title": "First conversation", "body": "Share what you want, what you need to avoid, and when the move should happen. No pressure, no commitment." },
+        { "title": "Private plan", "body": "Receive a short list, a selling range, or a preparation plan that feels realistic and fits your timeline." },
+        { "title": "Careful showings", "body": "Only serious buyers and useful homes make it onto the calendar. Every viewing is prepared, not improvised." },
+        { "title": "Steady close", "body": "Offers, inspections, and final terms are managed with calm attention until the right outcome is reached." }
+      ]
+    },
+    "split": {
+      "heading": "Whichever side of the move you're on.",
+      "buyingEyebrow": "Buying",
+      "buyingHeading": "A shortlist built around what you actually need.",
+      "buyingBody": "Search, filters, a map view, saved favourites, and a mortgage calculator, paired with honest guidance.",
+      "buyingCta": "Start Buying",
+      "sellingEyebrow": "Selling",
+      "sellingHeading": "A pricing and marketing plan before the first showing.",
+      "sellingBody": "A human-reviewed valuation, a prep checklist, and a private-sale option when discretion matters.",
+      "sellingCta": "Start Selling"
+    },
+    "neighbourhoods": {
+      "headingMain": "Buy the home, and the life",
+      "headingEm": "around it.",
+      "lead": "The concept covers six Toronto neighbourhoods, each with its own page of context: commute times, schools, and what the street actually feels like.",
+      "forestHill": "Ravine lots and the city's top school zone",
+      "yorkville": "Boutique shopping, galleries, five-star hotels",
+      "beaches": "Boardwalk living, a slower lakeside pace"
+    },
+    "about": {
+      "eyebrowPrefix": "About ",
+      "headingMain": "Friendly, straight-talking real estate, built around",
+      "headingEm": "your timeline.",
+      "lead": "{name} helps first-time buyers, newcomers, and small investors make sense of the GTA market, from Liberty Village condos to Leslieville semis, with clear numbers, honest answers, and valuations that start with a real conversation, not an automated guess.",
+      "miniNeighbourhoods": "Neighbourhoods covered",
+      "miniProperties": "Sample properties",
+      "miniYears": "Years serving the GTA",
+      "cta": "Read the Full Story"
+    },
+    "sales": {
+      "eyebrow": "Recent sales",
+      "headingMain": "Recent sales,",
+      "headingEm": "straight numbers.",
+      "viewSold": "View Sold Listings",
+      "soldTag": "Sold"
+    },
+    "testimonials": {
+      "eyebrow": "What clients say",
+      "heading": "Reviews from buyers and sellers.",
+      "buyer": "Buyer",
+      "seller": "Seller",
+      "readAll": "Read All Reviews"
+    },
+    "insights": {
+      "eyebrow": "Insights",
+      "heading": "Market notes, for thoughtful decisions.",
+      "viewAll": "View All Insights"
+    },
+    "valuationCta": {
+      "eyebrow": "Thinking of selling?",
+      "heading": "What is your home worth today?",
+      "lead": "A short, human-reviewed estimate: no instant automated number, no obligation to list.",
+      "cardEyebrow": "Free home valuation",
+      "cardHeading": "A reply within one business day.",
+      "cardBody": "Share a few property details and {firstName} will follow up personally.",
+      "button": "Request My Valuation"
+    },
+    "faqPreview": {
+      "eyebrow": "Questions",
+      "heading": "About this concept.",
+      "lead": "If your question isn't here, see the full FAQ or reach out directly.",
+      "button": "View All FAQs"
+    },
+    "contactSection": {
+      "eyebrow": "Get in touch",
+      "headingTemplate": "Reach {name} directly.",
+      "callText": "Call / Text",
+      "emailText": "Email",
+      "officeText": "Office",
+      "button": "Send a Message"
+    }
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "headingMain": "Let's talk about your",
+    "headingEm": "move.",
+    "leadTemplate": "Whether you're buying, selling, or just curious what your home is worth, tell {name} what you're looking to do: call, text, or use the form below, whichever you prefer.",
+    "officeDetails": "Office details",
+    "officeLabel": "Office",
+    "hoursLabel": "Hours",
+    "phoneLabel": "Phone / text",
+    "privacyStrong": "Your privacy is protected",
+    "privacyText": "Every enquiry is handled with discretion and recorded with your consent: see the",
+    "privacyLinkText": "Privacy Policy",
+    "beforeEyebrow": "Before you reach out",
+    "quickAnswersHeading": "A few quick answers."
+  },
+  "about": {
+    "eyebrow": "A concept by SLIIQQUE Studio",
+    "headingMain": "Built to show what's",
+    "headingEm": "possible.",
+    "lead": "This site is a capability demo: a real-estate marketing site built out in full, not mocked up, to show what SLIIQQUE can build for an actual brokerage or agent.",
+    "ctaTalk": "Talk to SLIIQQUE",
+    "ctaListings": "View listings",
+    "agentEyebrow": "Your agent",
+    "titleAt": "at",
+    "ctaFinalEyebrow": "Work with SLIIQQUE",
+    "ctaFinalHeadingMain": "Start with a simple",
+    "ctaFinalHeadingEm": "conversation.",
+    "ctaFinalBody": "No commitment, no obligation: tell SLIIQQUE what you're building and expect an honest answer about whether it's a good fit.",
+    "ctaFinalTalk": "Talk to SLIIQQUE",
+    "ctaFinalListings": "Browse Listings"
+  },
+  "legal": {
+    "notTranslatedNotice": "This page is not yet available in French. Showing the English version below.",
+    "privacyTitleMain": "Privacy",
+    "privacyTitleEm": "Policy",
+    "termsTitleMain": "Terms of",
+    "termsTitleEm": "Use",
+    "accessibilityTitleMain": "Accessibility",
+    "accessibilityTitleEm": "Statement"
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "headingEm": "Questions",
+    "headingSuffix": "about this concept.",
+    "lead": "What this site is, how the tools work, and what SLIIQQUE can build from here."
+  },
+  "thankYou": {
+    "backToHome": "Back to home",
+    "browseListings": "Browse listings",
+    "contact": {
+      "eyebrow": "Message sent",
+      "titleMain": "Thanks, we'll be",
+      "titleEm": "in touch.",
+      "body": "The SLIIQQUE team reads every message and replies within one business day."
+    },
+    "valuation": {
+      "eyebrow": "Request received",
+      "titleMain": "Your valuation request is",
+      "titleEm": "in.",
+      "body": "This concept routes requests to a person, not an automated model. Expect a reply by email with next steps."
+    },
+    "viewing": {
+      "eyebrow": "Viewing requested",
+      "titleMain": "We'll confirm your",
+      "titleEm": "viewing.",
+      "body": "We'll follow up by email or phone shortly to confirm a time that works for you."
+    },
+    "listingEnquiry": {
+      "eyebrow": "Enquiry sent",
+      "titleMain": "Thanks for your",
+      "titleEm": "interest.",
+      "body": "We'll follow up with more details about this listing shortly."
+    },
+    "newsletter": {
+      "eyebrow": "Almost there",
+      "titleMain": "Check your email to",
+      "titleEm": "confirm.",
+      "body": "We've sent a confirmation link to your inbox: click it to finish subscribing. If you don't see it within a few minutes, check spam."
+    },
+    "default": {
+      "eyebrow": "All set",
+      "titleMain": "Thanks for reaching",
+      "titleEm": "out.",
+      "body": "We'll be in touch shortly."
+    }
+  }
+}

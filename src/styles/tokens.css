@@ -1,0 +1,85 @@
+/* ==========================================================================
+   SLIIQQUE REAL ESTATE: DESIGN TOKENS
+   Original Avery Estate palette and type, restored at the user's request.
+   Every value in this file was read from computed styles, not guessed.
+   ========================================================================== */
+
+:root {
+  /* ---- Colour ---------------------------------------------------------- */
+  --c-bg:        #F2EFE6;   /* page background (body)               rgb(242,239,230) */
+  --c-ink:       #0E1510;   /* headings, dark text, footer bg        rgb(14,21,16)    */
+  --c-on-light:  #0E1510;   /* text sitting on a white/light surface (same as ink here) */
+  --c-muted:     #6B6B5C;   /* body copy on light                    rgb(107,107,92)  */
+  --c-accent:    #A05C35;   /* accent: italics, eyebrows, CTA        rgb(160,92,53)   */
+  --c-surface-raised: #0C2B1F;   /* deep green sections, primary button   rgb(12,43,31)    */
+  --c-surface-alt:    #E8E2D5;   /* beige cards / testimonial section     rgb(232,226,213) */
+  --c-white:     #FFFFFF;
+  --c-placeholder: #d9d3c4;
+
+  /* Alpha helpers (white on dark, ink on light) */
+  --c-white-70:  rgba(255,255,255,.70);
+  --c-white-50:  rgba(255,255,255,.50);
+  --c-white-20:  rgba(14,21,16,.20);
+  --c-white-10:  rgba(255,255,255,.10);
+  --c-white-03:  rgba(255,255,255,.03);
+  --c-ink-10:    rgba(14,21,16,.10);   /* hairline dividers on light  */
+  --c-ink-20:    rgba(14,21,16,.20);   /* outline-button border       */
+
+  /* ---- Typography ------------------------------------------------------ */
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif; /* 400 + 400 italic */
+  --font-body:    "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif; /* 500 + 600 */
+
+  /* Type scale (desktop): size / line-height / letter-spacing */
+  --fs-h1: 70px;  --lh-h1: 77px;    --ls-h1: -2.1px;   /* -0.03em */
+  --fs-h2: 58px;  --lh-h2: 63.8px;  --ls-h2: -1.74px;  /* -0.03em */
+  --fs-h2s: 42px; --lh-h2s: 46.2px; --ls-h2s: -.84px;  /* -0.02em  (CTA / About lead / price) */
+  --fs-h3: 28px;  --lh-h3: 30.8px;
+  --fs-h4: 22px;  --lh-h4: 24.2px;
+  --fs-eyebrow: 12px; --lh-eyebrow: 14.4px; --ls-eyebrow: .48px; /* 0.04em, uppercase, 600 */
+  --fs-lg: 18px;  --lh-lg: 23.4px;  --ls-lg: -.18px;   /* FAQ question, stat labels */
+  --fs-md: 16px;  --lh-md: 20.8px;  --ls-md: -.16px;   /* body */
+  --fs-sm: 14px;  --lh-sm: 18.2px;  --ls-sm: -.14px;   /* buttons, nav, small body */
+  --fs-xs: 12px;  --lh-xs: 15.6px;  --ls-xs: -.12px;   /* legal / captions */
+
+  /* ---- Layout ---------------------------------------------------------- */
+  --container:   1200px;   /* outer width, includes gutters            */
+  --gutter:      30px;     /* => 1140px content width                  */
+  --section-y:   120px;    /* vertical section padding (desktop)       */
+  --hero-top:    60px;     /* hero top padding (below the 20px nav gap) */
+  --gap-grid:    10px;     /* default card gap (≈10–11px)               */
+  --gap-wide:    20px;     /* gallery / property grid gap               */
+
+  /* ---- Shape ----------------------------------------------------------- */
+  --r-card:  20px;
+  --r-pill:  30px;
+  --r-nav:   50px;
+  --r-input: 10px;
+  --r-chip:  100px;
+  --r-icon:  10px;
+
+  /* ---- Motion (Framer "appear" effect, reproduced) ---------------------- */
+  --reveal-y: 20px;
+  --reveal-dur: .7s;
+  --reveal-ease: cubic-bezier(.44,0,.56,1);
+}
+
+/* Tablet 810–1199 and mobile ≤809: type and spacing overrides */
+@media (max-width: 1199px) {
+  :root {
+    --fs-h1: 56px; --lh-h1: 61.6px; --ls-h1: -1.68px;
+    --fs-h2: 46px; --lh-h2: 50.6px; --ls-h2: -1.38px;
+    --fs-h2s: 36px; --lh-h2s: 39.6px; --ls-h2s: -.72px;
+    --fs-h3: 27px; --lh-h3: 29.7px;
+    --gutter: 30px;
+  }
+}
+@media (max-width: 809px) {
+  :root {
+    --fs-h1: 44px; --lh-h1: 48.4px; --ls-h1: -1.32px;
+    --fs-h2: 32px; --lh-h2: 35.2px; --ls-h2: -.96px;
+    --fs-h2s: 30px; --lh-h2s: 33px; --ls-h2s: -.6px;
+    --fs-h3: 26px; --lh-h3: 28.6px;
+    --gutter: 20px;
+    --section-y: 100px;
+  }
+}
