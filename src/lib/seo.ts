@@ -144,7 +144,7 @@ type SocialOptions = {
 export function pageSocial(options: SocialOptions): Pick<Metadata, "openGraph" | "twitter"> {
   const url = `${SITE_URL}${options.path === "/" ? "" : options.path}`;
   const image = absolute(options.image ?? OG_IMAGES[options.ogImage ?? "default"]);
-  const alt = options.imageAlt ?? `${options.title} — ${BRAND.siteName}`;
+  const alt = options.imageAlt ?? `${options.title} | ${BRAND.siteName}`;
   const images = [{ url: image, width: 1200, height: 630, alt }];
 
   const openGraph: NonNullable<Metadata["openGraph"]> =

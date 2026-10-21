@@ -1,29 +1,35 @@
 /* ==========================================================================
    SLIIQQUE REAL ESTATE: DESIGN TOKENS
-   Original Avery Estate palette and type, restored at the user's request.
-   Every value in this file was read from computed styles, not guessed.
+   SLIIQQUE brand colors, light theme (see SLIIQQUE-Brand-Book.md §13).
+   Font families are unchanged from the original Avery Estate type system.
    ========================================================================== */
 
 :root {
-  /* ---- Colour ---------------------------------------------------------- */
-  --c-bg:        #F2EFE6;   /* page background (body)               rgb(242,239,230) */
-  --c-ink:       #0E1510;   /* headings, dark text, footer bg        rgb(14,21,16)    */
-  --c-on-light:  #0E1510;   /* text sitting on a white/light surface (same as ink here) */
-  --c-muted:     #6B6B5C;   /* body copy on light                    rgb(107,107,92)  */
-  --c-accent:    #A05C35;   /* accent: italics, eyebrows, CTA        rgb(160,92,53)   */
-  --c-surface-raised: #0C2B1F;   /* deep green sections, primary button   rgb(12,43,31)    */
-  --c-surface-alt:    #E8E2D5;   /* beige cards / testimonial section     rgb(232,226,213) */
+  /* ---- Colour: SLIIQQUE brand, light theme ------------------------------ */
+  --c-bg:        #FFFFFF;   /* page background (body)                                  */
+  --c-ink:       #050505;   /* headings, primary text                                  */
+  --c-on-light:  #050505;   /* text sitting on a white/light surface (same as ink here) */
+  --c-muted:     #6B7280;   /* secondary text (brand gray-500)                         */
+  --c-accent:    #f97316;   /* brand orange-500: italics, eyebrows, primary CTA fill   */
+  --c-blue:      #3b82f6;   /* brand blue-500: links, secondary accent                 */
+  --c-purple:    #8b5cf6;   /* brand purple-500: tertiary highlights                   */
+  --c-success:   #22c55e;   /* brand green-500: success / rebate highlights            */
+  --c-error:     #f87171;   /* brand red-400: error text and borders                   */
+  --c-surface-raised: #050505;   /* near-black accent sections (cards, CTA bands, sticky bars) */
+  --c-surface-alt:    #F0F0F0;   /* light-gray surface: footer bg, alt cards            */
   --c-white:     #FFFFFF;
-  --c-placeholder: #d9d3c4;
+  --c-placeholder: #E5E7EB;   /* neutral gray-200 image placeholder                    */
+  --gradient-brand: linear-gradient(90deg, #f97316 0%, #3b82f6 50%, #8b5cf6 100%);   /* brand signature gradient */
 
-  /* Alpha helpers (white on dark, ink on light) */
+  /* Alpha helpers (white on dark surfaces, ink on light surfaces) */
   --c-white-70:  rgba(255,255,255,.70);
   --c-white-50:  rgba(255,255,255,.50);
-  --c-white-20:  rgba(14,21,16,.20);
+  --c-white-20:  rgba(5,5,5,.20);
   --c-white-10:  rgba(255,255,255,.10);
   --c-white-03:  rgba(255,255,255,.03);
-  --c-ink-10:    rgba(14,21,16,.10);   /* hairline dividers on light  */
-  --c-ink-20:    rgba(14,21,16,.20);   /* outline-button border       */
+  --c-ink-06:    rgba(5,5,5,.06);   /* subtle card borders (brand light-theme spec)  */
+  --c-ink-10:    rgba(5,5,5,.10);   /* hairline dividers on light  */
+  --c-ink-20:    rgba(5,5,5,.20);   /* outline-button border       */
 
   /* ---- Typography ------------------------------------------------------ */
   --font-display: "Playfair Display", Georgia, "Times New Roman", serif; /* 400 + 400 italic */
@@ -49,11 +55,13 @@
   --gap-grid:    10px;     /* default card gap (≈10–11px)               */
   --gap-wide:    20px;     /* gallery / property grid gap               */
 
-  /* ---- Shape ----------------------------------------------------------- */
-  --r-card:  20px;
+  /* ---- Shape: brand rules -- functional elements (buttons, inputs) sharp;
+     cards gently rounded; pills/chips/nav fully rounded ------------------- */
+  --r-card:  16px;   /* rounded-2xl, brand standard card radius */
   --r-pill:  30px;
   --r-nav:   50px;
-  --r-input: 10px;
+  --r-input: 0px;    /* brand: inputs are sharp */
+  --r-btn:   0px;    /* brand: buttons are sharp */
   --r-chip:  100px;
   --r-icon:  10px;
 

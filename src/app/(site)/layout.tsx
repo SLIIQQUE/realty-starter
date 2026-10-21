@@ -20,7 +20,7 @@ import "@/styles/base.css";
 import "@/styles/components.css";
 import "@/styles/pages.css";
 
-export const viewport: Viewport = { themeColor: "#F2EFE6", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#FFFFFF", width: "device-width", initialScale: 1 };
 
 const TITLE = "Toronto Real Estate & GTA Homes for Sale";
 const DESCRIPTION =

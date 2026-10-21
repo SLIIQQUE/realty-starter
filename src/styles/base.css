@@ -80,15 +80,15 @@ em, .accent { font-style: italic; color: var(--c-accent); }   /* the signature i
 .lead { max-width: 400px; font-size: var(--fs-md); line-height: var(--lh-md); letter-spacing: var(--ls-md); color: var(--c-muted); }
 .sec-body { margin-top: 60px; }
 
-/* ---------- Buttons (pill, 38px high) ----------------------------------- */
+/* ---------- Buttons (38px high, sharp corners per brand) ----------------- */
 .btn {
   position: relative; display: inline-flex; align-items: center; justify-content: center;
-  height: 38px; padding: 10px 22px; border-radius: var(--r-pill);
+  height: 38px; padding: 10px 22px; border-radius: var(--r-btn);
   font-family: var(--font-body); font-weight: 500; font-size: var(--fs-sm);
   line-height: var(--lh-sm); letter-spacing: var(--ls-sm); white-space: nowrap; overflow: hidden;
   transition: background-color .3s, transform .3s;
 }
-.btn--forest { background: var(--c-surface-raised); color: var(--c-white); }
+.btn--forest { background: var(--c-accent); color: var(--c-white); }
 .btn--copper { background: var(--c-accent); color: var(--c-white); }
 .btn--white  { background: var(--c-white);  color: var(--c-ink); }
 .btn--ink    { background: var(--c-ink);    color: var(--c-white); }
@@ -96,6 +96,7 @@ em, .accent { font-style: italic; color: var(--c-accent); }   /* the signature i
 .btn--ghost::after { content: ""; position: absolute; inset: 0; border-radius: inherit; border: 1px solid var(--c-ink-20); pointer-events: none; }
 .btn--ghost-light { background: var(--c-white-10); color: var(--c-white); }    /* "Request access" on forest */
 .btn--block { width: 100%; }
+.btn--forest:hover, .btn--copper:hover { background: #ea580c; }   /* brand orange-600 */
 
 /* Roll-text hover: label is duplicated; the copy slides in from below. */
 .btn__roll { position: relative; display: block; overflow: hidden; height: var(--lh-sm); }
@@ -115,5 +116,5 @@ em, .accent { font-style: italic; color: var(--c-accent); }   /* the signature i
 }
 
 /* ---------- Image placeholders (so layouts hold before images exist) ---- */
-.img { position: relative; background: #d9d3c4; overflow: hidden; }
+.img { position: relative; background: var(--c-placeholder); overflow: hidden; }
 .img > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }

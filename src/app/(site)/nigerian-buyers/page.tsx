@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     path: "/nigerian-buyers",
     ogImage: "nigeria",
-    imageAlt: "Toronto property, from Lagos — remote buying for Nigerian buyers",
+    imageAlt: "Toronto property, from Lagos: remote buying for Nigerian buyers",
   }),
 };
 
