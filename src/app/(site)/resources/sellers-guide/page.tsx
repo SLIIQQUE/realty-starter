@@ -6,8 +6,9 @@ import RollButton from "@/components/RollButton";
 import ArticleToc, { type TocItem } from "@/components/ArticleToc";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "The Seller's Guide";
-const DESCRIPTION = "What actually adds value before listing, and how private and public sales differ.";
+const TITLE = "Toronto Home Seller's Guide";
+const DESCRIPTION =
+  "How to prepare, price and list a Toronto home, with the costs, timelines and negotiation choices that decide the result.";
 
 export const metadata: Metadata = {
   title: TITLE,

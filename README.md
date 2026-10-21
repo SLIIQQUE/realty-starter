@@ -60,7 +60,15 @@ calculator/enquiry form/breadcrumbs/structured data), sold, neighbourhoods (+ de
 snapshot/local FAQ), buy, sell, home valuation, book-a-viewing, insights (+ detail), reviews, team (+ profiles),
 two Canadian calculators (mortgage with CMHC/bi-weekly rules, land transfer tax with real Ontario/Toronto/BC
 brackets), resources/buyer+seller guides, open houses, favorites, compare, FAQ, privacy/terms/accessibility,
-custom 404/500, sitemap/robots.
+custom 404/500, sitemap/robots — plus `/nigerian-buyers`, a remote-buying landing page for Nigerians purchasing
+Toronto/GTA property (video tours, non-resident financing, foreign-buyer rules, naira-to-dollar planning).
+It is a secondary-audience page, not a claim of a Nigerian office or Nigerian inventory.
+
+Search and answer-engine work is part of the template, not an afterthought: unique titles/descriptions on
+every page, a branded 1200×630 Open Graph card in `public/og/` for each section (detail pages use their own
+hero photo), `en-CA`/`fr-CA`/`x-default` hreflang, `geo.*` meta, image sitemap entries, `public/llms.txt`
+for AI crawlers, and JSON-LD for Organization, WebSite, RealEstateAgent, Service, Place, Article,
+Product/Offer, FAQPage, BreadcrumbList and ItemList. See `PRODUCTION-CHECKLIST.md` §8.6.
 
 Plus: a real (optional) Payload CMS, a CSV lead export endpoint, a form health-check cron, working French
 routing, security headers, consent-gated analytics with conversion events, and a compliance footer (agent,

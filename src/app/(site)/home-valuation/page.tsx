@@ -4,14 +4,15 @@ import SplitHeading from "@/components/SplitHeading";
 import ValuationForm from "@/components/ValuationForm";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Home Valuation";
-const DESCRIPTION = "Request a home valuation: a concept lead flow, reviewed by a person rather than an automated model.";
+const TITLE = "Toronto Home Valuation";
+const DESCRIPTION =
+  "Request a considered home valuation for a Toronto or GTA property, reviewed against local comparables by a person rather than a model.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: pageAlternates("/home-valuation"),
-  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/home-valuation" }),
+  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/home-valuation", ogImage: "valuation" }),
 };
 
 export default function ValuationPage() {

@@ -7,8 +7,9 @@ import { getAgents } from "@/lib/content/agents";
 import { BRAND } from "@/data/brand";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Team";
-const DESCRIPTION = `Meet the ${BRAND.siteName} concept team: sample agent profiles for this real-estate capability demo.`;
+const TITLE = "Toronto Real Estate Team";
+const DESCRIPTION =
+  "Meet the sample agent behind the SLIIQQUE Toronto concept, including languages, designations and coverage across the GTA.";
 
 export const metadata: Metadata = {
   title: TITLE,

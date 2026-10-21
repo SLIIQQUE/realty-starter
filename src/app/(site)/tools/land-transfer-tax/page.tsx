@@ -3,14 +3,15 @@ import SplitHeading from "@/components/SplitHeading";
 import LandTransferTaxCalculator from "@/components/LandTransferTaxCalculator";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Land Transfer Tax Calculator";
-const DESCRIPTION = "Estimate Ontario, Toronto, and BC land transfer tax on a purchase price, including first-time buyer rebates.";
+const TITLE = "Ontario & Toronto Land Transfer Tax";
+const DESCRIPTION =
+  "Estimate Ontario, Toronto and BC land transfer tax on a purchase price, including first-time buyer rebates and the municipal levy.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: pageAlternates("/tools/land-transfer-tax"),
-  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/tools/land-transfer-tax" }),
+  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/tools/land-transfer-tax", ogImage: "tools" }),
 };
 
 export default function LandTransferTaxCalculatorPage() {

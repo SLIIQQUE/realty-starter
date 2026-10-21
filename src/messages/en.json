@@ -24,7 +24,8 @@
       "resources": "Resources",
       "insights": "Insights",
       "faq": "FAQ",
-      "contact": "Contact"
+      "contact": "Contact",
+      "fromNigeria": "From Nigeria"
     },
     "legalLabels": {
       "privacyPolicy": "Privacy Policy",
@@ -95,10 +96,22 @@
       "noteHeading": "No rushed decisions. No noisy handoff.",
       "noteBody": "Every step is explained before it happens, and handled with care while it does.",
       "steps": [
-        { "title": "First conversation", "body": "Share what you want, what you need to avoid, and when the move should happen. No pressure, no commitment." },
-        { "title": "Private plan", "body": "Receive a short list, a selling range, or a preparation plan that feels realistic and fits your timeline." },
-        { "title": "Careful showings", "body": "Only serious buyers and useful homes make it onto the calendar. Every viewing is prepared, not improvised." },
-        { "title": "Steady close", "body": "Offers, inspections, and final terms are managed with calm attention until the right outcome is reached." }
+        {
+          "title": "First conversation",
+          "body": "Share what you want, what you need to avoid, and when the move should happen. No pressure, no commitment."
+        },
+        {
+          "title": "Private plan",
+          "body": "Receive a short list, a selling range, or a preparation plan that feels realistic and fits your timeline."
+        },
+        {
+          "title": "Careful showings",
+          "body": "Only serious buyers and useful homes make it onto the calendar. Every viewing is prepared, not improvised."
+        },
+        {
+          "title": "Steady close",
+          "body": "Offers, inspections, and final terms are managed with calm attention until the right outcome is reached."
+        }
       ]
     },
     "split": {

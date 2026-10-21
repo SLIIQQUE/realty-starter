@@ -7,12 +7,13 @@ import fr from "@/messages/fr.json";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
 const TITLE = "Accessibility Statement";
-const DESCRIPTION = `${BRAND.siteName}'s commitment to an accessible site, and how to reach us about an accessibility issue.`;
+const DESCRIPTION =
+  "SLIIQQUE's commitment to an accessible Toronto real estate site, and how to report an accessibility issue.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: pageAlternates("/accessibility", { languages: true }),
+  alternates: pageAlternates("/accessibility"),
   ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/accessibility" }),
 };
 

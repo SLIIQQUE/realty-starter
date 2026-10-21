@@ -18,10 +18,20 @@ import { BRAND } from "@/data/brand";
 import { getLocale } from "@/lib/i18n/getLocale";
 import en from "@/messages/en.json";
 import fr from "@/messages/fr.json";
-import { pageAlternates, faqSchema } from "@/lib/seo";
+import { pageAlternates, pageSocial, faqSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  alternates: pageAlternates("/", { languages: true }),
+  title: { absolute: "Toronto Real Estate & GTA Homes for Sale | SLIIQQUE" },
+  description:
+    "Curated Toronto and GTA listings, six neighbourhood guides, and Canadian mortgage and land transfer tax calculators, plus a remote buying route for Nigerian buyers.",
+  alternates: pageAlternates("/"),
+  ...pageSocial({
+    title: "Toronto Real Estate & GTA Homes for Sale",
+    description:
+      "Curated Toronto and GTA listings, neighbourhood guides, and Canadian property calculators, plus remote buying support for Nigerian buyers.",
+    path: "/",
+    ogImage: "home",
+  }),
 };
 
 const POST_IMAGES = [
@@ -46,6 +56,10 @@ const HOME_FAQS: AccordionItem[] = [
   {
     q: "Do I need an account to save or compare properties?",
     a: "No. Favourites and comparisons are stored in your browser's local storage only, no sign-up required.",
+  },
+  {
+    q: "Can I buy a Toronto home from Nigeria?",
+    a: "Yes. The site includes a remote buying route: video walkthroughs, document review, non-resident financing introductions and closing by power of attorney. Canada restricts some non-resident purchases until 1 January 2027, so eligibility comes before the search.",
   },
   {
     q: "Can SLIIQQUE build something like this for a real brokerage or agent?",

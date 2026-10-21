@@ -5,8 +5,9 @@ import { getTestimonials } from "@/lib/content/testimonials";
 import ReviewsFilter from "./ReviewsFilter";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Reviews";
-const DESCRIPTION = "Sample buyer and seller reviews for the SLIIQQUE concept demo.";
+const TITLE = "Client Reviews";
+const DESCRIPTION =
+  "Sample buyer and seller reviews for the SLIIQQUE Toronto real estate concept, with recorded permission behind every story.";
 
 export const metadata: Metadata = {
   title: TITLE,

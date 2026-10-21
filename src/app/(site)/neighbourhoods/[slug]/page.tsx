@@ -26,14 +26,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const n = await getNeighbourhoodBySlug(slug);
   if (!n) return {};
   return {
-    title: n.name,
-    description: n.blurb,
+    title: `${n.name} Neighbourhood Guide`,
+    description: `${n.name}, Toronto: ${n.blurb}`,
     alternates: pageAlternates(`/neighbourhoods/${n.slug}`),
     ...pageSocial({
-      title: n.name,
+      title: `${n.name} Neighbourhood Guide`,
       description: n.blurb,
       path: `/neighbourhoods/${n.slug}`,
       image: n.heroImg ? `${SITE_URL}${resolveImageSrc(n.heroImg)}` : undefined,
+      imageAlt: `${n.name}, Toronto`,
+      ogImage: "neighbourhoods",
     }),
   };
 }

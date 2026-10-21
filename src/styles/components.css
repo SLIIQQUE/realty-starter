@@ -216,7 +216,7 @@
 .info-card p:not(.eyebrow) { margin-top: 10px; font-size: var(--fs-md); line-height: var(--lh-md); letter-spacing: var(--ls-md); }
 .info-card--copper { background: var(--c-accent); color: var(--c-white); }
 .info-card--copper p:not(.eyebrow) { color: var(--c-white-70); }
-.info-card--sand { background: var(--c-surface-alt); }
+.info-card--sand { background: var(--c-surface-alt); color: var(--c-on-light); }
 .info-card--sand .eyebrow { color: var(--c-accent); }
 .info-card--sand p:not(.eyebrow) { color: var(--c-muted); }
 .info-card--white { background: var(--c-white); color: var(--c-on-light); }

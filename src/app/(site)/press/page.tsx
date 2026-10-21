@@ -6,7 +6,8 @@ import { BRAND } from "@/data/brand";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
 const TITLE = "Press & Media";
-const DESCRIPTION = "SLIIQQUE Studio facts and logo assets for press use.";
+const DESCRIPTION =
+  "SLIIQQUE Studio facts, brand background and logo assets for press and partner use.";
 
 export const metadata: Metadata = {
   title: TITLE,

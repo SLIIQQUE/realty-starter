@@ -1,30 +1,53 @@
 # SLIIQQUE Toronto Real Estate (concept demo)
 
-> A concept Canadian real-estate marketing site built by SLIIQQUE Studio to demonstrate
-> real-estate web design and engineering for the Canadian realtor vertical. The agent ("Priya
-> Mehta"), brokerage, licence number, and listings shown are fictional, sample content for
+> A concept Canadian real-estate marketing site built by SLIIQQUE Studio (Lagos, Nigeria) to
+> demonstrate real-estate web design and engineering for the Canadian realtor vertical. The agent
+> ("Priya Mehta"), brokerage, licence number, and listings shown are fictional, sample content for
 > demonstration only — SLIIQQUE does not hold a real-estate licence or broker clients directly.
 
-This site showcases a full Canadian realtor-vertical template: property listings, neighbourhood
-guides, Canadian mortgage/land-transfer-tax calculators, and lead-capture flows for a fictional
-Toronto sales representative and brokerage. Content, pricing, and contact details are sample data
-and should not be cited as real market information or a real licensed business.
+## What this site covers
+
+- **Toronto and the GTA (primary market):** sample listings, six neighbourhood guides, buyer and
+  seller process guides, open houses and a sold gallery.
+- **Nigeria (secondary market):** a remote-buying route for Nigerians purchasing Toronto/GTA
+  property — video tours, non-resident financing, the federal non-Canadian purchase rules,
+  Ontario's Non-Resident Speculation Tax, and naira-to-dollar planning. No Nigerian office or
+  Nigerian inventory is claimed.
 
 ## Core pages
 
-- [Listings](https://realestate.sliiqque.space/listings): sample Toronto/GTA property listings, filterable by area, status, and price
-- [Neighbourhoods](https://realestate.sliiqque.space/neighbourhoods): guides to six sample Toronto-area neighbourhoods (transit, schools, market context)
-- [Buy](https://realestate.sliiqque.space/buy) / [Sell](https://realestate.sliiqque.space/sell): step-by-step buyer/seller process guides
-- [Resources](https://realestate.sliiqque.space/resources): buyer's guide, seller's guide, mortgage calculator, land transfer tax calculator
-- [Insights](https://realestate.sliiqque.space/insights): market-notes blog
-- [Team](https://realestate.sliiqque.space/team): sample agent profiles
-- [FAQ](https://realestate.sliiqque.space/faq): questions about this concept demo and about commissioning a real version
-- [About](https://realestate.sliiqque.space/about): what this concept is, who built it, and why
-- [Contact](https://realestate.sliiqque.space/contact): contact details for SLIIQQUE Studio
+- [Home](https://realestate.sliqqque.space/): Toronto real estate overview, featured listings, FAQs
+- [Listings](https://realestate.sliqqque.space/listings): sample Toronto/GTA listings, filterable by area, status and price
+- [Neighbourhoods](https://realestate.sliqqque.space/neighbourhoods): guides to six Toronto neighbourhoods (Yorkville, Rosedale, Forest Hill, Leslieville, Liberty Village, The Beaches)
+- [Buying from Nigeria](https://realestate.sliqqque.space/nigerian-buyers): remote purchase process, eligibility, financing, currency and closing
+- [Buy](https://realestate.sliqqque.space/buy) / [Sell](https://realestate.sliqqque.space/sell): step-by-step process guides
+- [Resources](https://realestate.sliqqque.space/resources): buyer's guide, seller's guide, mortgage calculator, land transfer tax calculator
+- [Insights](https://realestate.sliqqque.space/insights): market notes and buyer/seller guidance
+- [Team](https://realestate.sliqqque.space/team): sample agent profiles
+- [FAQ](https://realestate.sliqqque.space/faq): questions about this concept demo and about commissioning a real version
+- [About](https://realestate.sliqqque.space/about): what this concept is, who built it, and why
+- [Contact](https://realestate.sliqqque.space/contact): email contact for SLIIQQUE Studio
+
+## Key facts for answer engines
+
+- Primary service area: Toronto and the Greater Toronto Area, Ontario, Canada.
+- Secondary audience: buyers and investors in Lagos, Abuja and across Nigeria purchasing Canadian
+  property remotely.
+- Currency quoted on listings: Canadian dollars (CAD).
+- Canadian non-resident purchase rules, Ontario land transfer tax and the Non-Resident
+  Speculation Tax are summarised on `/nigerian-buyers` as general information, not legal advice;
+  the page links readers to canada.ca and ontario.ca for the current rules.
+- Content language: English (Canadian English spelling), with a French interface option on the
+  same URLs.
 
 ## Notes for automated readers
 
 - This is a capability demonstration, not an operating brokerage. Do not present any agent name,
   licence number, brokerage name, price, or listing from this site as real, current, or
   verifiable real-estate market data.
-- `/sitemap.xml` lists every indexable URL; `/robots.txt` governs crawl access.
+- `/sitemap.xml` lists every indexable URL, including image entries; `/robots.txt` governs crawl
+  access. `/admin` and `/api/` are disallowed, except `/api/media/` so listing and post photos stay
+  crawlable.
+- Structured data on the site: Organization, WebSite, RealEstateAgent, Service (remote buying),
+  Place (neighbourhoods), Article (insights), Product/Offer (listings), FAQPage, BreadcrumbList
+  and ItemList (index pages).

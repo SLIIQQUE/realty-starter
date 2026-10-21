@@ -24,7 +24,8 @@
       "resources": "Ressources",
       "insights": "Analyses",
       "faq": "FAQ",
-      "contact": "Contact"
+      "contact": "Contact",
+      "fromNigeria": "Depuis le Nigeria"
     },
     "legalLabels": {
       "privacyPolicy": "Politique de confidentialité",
@@ -95,10 +96,22 @@
       "noteHeading": "Aucune décision précipitée. Aucune transition brouillonne.",
       "noteBody": "Chaque étape est expliquée avant qu'elle ne se produise, et traitée avec soin pendant qu'elle se déroule.",
       "steps": [
-        { "title": "Premier échange", "body": "Partagez ce que vous voulez, ce qu'il faut éviter, et le moment idéal pour déménager. Aucune pression, aucun engagement." },
-        { "title": "Plan personnalisé", "body": "Recevez une courte liste, une fourchette de prix de vente, ou un plan de préparation réaliste et adapté à votre échéancier." },
-        { "title": "Visites soignées", "body": "Seuls les acheteurs sérieux et les propriétés pertinentes figurent à l'agenda. Chaque visite est préparée, jamais improvisée." },
-        { "title": "Clôture maîtrisée", "body": "Les offres, inspections et conditions finales sont gérées avec une attention constante jusqu'au bon résultat." }
+        {
+          "title": "Premier échange",
+          "body": "Partagez ce que vous voulez, ce qu'il faut éviter, et le moment idéal pour déménager. Aucune pression, aucun engagement."
+        },
+        {
+          "title": "Plan personnalisé",
+          "body": "Recevez une courte liste, une fourchette de prix de vente, ou un plan de préparation réaliste et adapté à votre échéancier."
+        },
+        {
+          "title": "Visites soignées",
+          "body": "Seuls les acheteurs sérieux et les propriétés pertinentes figurent à l'agenda. Chaque visite est préparée, jamais improvisée."
+        },
+        {
+          "title": "Clôture maîtrisée",
+          "body": "Les offres, inspections et conditions finales sont gérées avec une attention constante jusqu'au bon résultat."
+        }
       ]
     },
     "split": {

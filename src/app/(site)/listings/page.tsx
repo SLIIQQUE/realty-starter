@@ -6,16 +6,18 @@ import RollButton from "@/components/RollButton";
 import PropertiesExplorer from "@/components/PropertiesExplorer";
 import { getListings } from "@/lib/content/listings";
 import { getNeighbourhoods } from "@/lib/content/neighbourhoods";
-import { pageAlternates, pageSocial } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { itemListSchema, pageAlternates, pageSocial, SITE_URL } from "@/lib/seo";
 
-const TITLE = "Listings";
-const DESCRIPTION = "Search, filter, and map sample Toronto and GTA concept listings.";
+const TITLE = "Toronto & GTA Homes for Sale";
+const DESCRIPTION =
+  "Browse sample Toronto and GTA listings across Yorkville, Rosedale, Forest Hill, Leslieville, Liberty Village and The Beaches, with prices, status and photos.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: pageAlternates("/listings"),
-  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/listings" }),
+  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/listings", ogImage: "listings" }),
 };
 
 export default async function PropertiesPage() {
@@ -23,6 +25,16 @@ export default async function PropertiesPage() {
 
   return (
     <main>
+      <JsonLd
+        data={[
+          itemListSchema(
+            "Toronto and GTA homes for sale (sample portfolio)",
+            properties.map((p) => ({ name: `${p.name}, ${p.loc}`, url: `/listings/${p.slug}` })),
+            SITE_URL,
+            "/listings"
+          ),
+        ]}
+      />
       <section className="page-hero page-hero--center page-hero--listing">
         <div className="container">
           <div className="stack">

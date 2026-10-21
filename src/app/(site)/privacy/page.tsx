@@ -7,12 +7,13 @@ import fr from "@/messages/fr.json";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
 const TITLE = "Privacy Policy";
-const DESCRIPTION = `How ${BRAND.siteName} handles personal data submitted through this concept site, in line with Canadian privacy law (PIPEDA).`;
+const DESCRIPTION =
+  "How SLIIQQUE handles personal data submitted through this site, in line with Canadian privacy law (PIPEDA).";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: pageAlternates("/privacy", { languages: true }),
+  alternates: pageAlternates("/privacy"),
   ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/privacy" }),
 };
 

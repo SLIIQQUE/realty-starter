@@ -7,12 +7,13 @@ import fr from "@/messages/fr.json";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
 const TITLE = "Terms of Use";
-const DESCRIPTION = "Terms for using this concept site, including the REALTOR®/MLS® trademark notice.";
+const DESCRIPTION =
+  "Terms for using this Toronto real estate concept site, including the REALTOR® and MLS® trademark notice.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: pageAlternates("/terms", { languages: true }),
+  alternates: pageAlternates("/terms"),
   ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/terms" }),
 };
 

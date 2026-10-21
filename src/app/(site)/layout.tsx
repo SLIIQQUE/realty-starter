@@ -11,7 +11,7 @@ import CompareBar from "@/components/CompareBar";
 import StickyMobileBar from "@/components/StickyMobileBar";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import AttributionCapture from "@/components/AttributionCapture";
-import { organizationSchema, websiteSchema, realEstateAgentSchema } from "@/lib/seo";
+import { organizationSchema, pageGeo, pageSocial, SITE_URL, websiteSchema, realEstateAgentSchema } from "@/lib/seo";
 import { getLocale } from "@/lib/i18n/getLocale";
 import { BRAND } from "@/data/brand";
 import "@/styles/fonts.css";
@@ -22,14 +22,13 @@ import "@/styles/pages.css";
 
 export const viewport: Viewport = { themeColor: "#F2EFE6", width: "device-width", initialScale: 1 };
 
-const SITE_URL = "https://realestate.sliiqque.space";
-const TITLE = `${BRAND.siteName} | Toronto Real Estate Concept`;
+const TITLE = "Toronto Real Estate & GTA Homes for Sale";
 const DESCRIPTION =
-  "A concept Canadian real-estate marketing site built by SLIIQQUE Studio: Toronto listings, neighbourhood guides, Canadian mortgage and land transfer tax calculators, and lead-capture funnels that actually send email. Sample agent, brokerage and listings for demonstration only.";
+  "Curated Toronto and GTA listings, neighbourhood guides, and Canadian mortgage and land transfer tax calculators, plus remote buying support for Nigerian buyers.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: TITLE, template: `%s | ${BRAND.siteName}` },
+  title: { default: `${TITLE} | ${BRAND.siteName}`, template: `%s | ${BRAND.siteName}` },
   description: DESCRIPTION,
   applicationName: BRAND.siteName,
   authors: [{ name: BRAND.founder }],
@@ -42,15 +41,13 @@ export const metadata: Metadata = {
     ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
     : undefined,
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
-  openGraph: {
-    type: "website",
-    siteName: BRAND.siteName,
-    locale: "en_CA",
-    url: SITE_URL,
-    title: TITLE,
+  other: pageGeo("canada"),
+  ...pageSocial({
+    title: `${TITLE} | ${BRAND.siteName}`,
     description: DESCRIPTION,
-  },
-  twitter: { card: "summary_large_image", site: BRAND.social.handle, creator: BRAND.social.handle, title: TITLE, description: DESCRIPTION },
+    path: "/",
+    ogImage: "home",
+  }),
 };
 
 export default async function RootLayout({ children }: { children: ReactNode }) {

@@ -7,8 +7,9 @@ import { getSoldProperties } from "@/lib/content/soldProperties";
 import { resolveImageSrc } from "@/lib/content/image";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Recent Sales";
-const DESCRIPTION = "Recent sample sales from the Toronto and GTA concept portfolio, shown here as social proof.";
+const TITLE = "Recent Toronto Home Sales";
+const DESCRIPTION =
+  "Recent sample sales across Toronto and the GTA, with address area, sale month and price, the record behind the sold gallery.";
 
 export const metadata: Metadata = {
   title: TITLE,

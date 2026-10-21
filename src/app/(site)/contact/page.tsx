@@ -12,13 +12,14 @@ import en from "@/messages/en.json";
 import fr from "@/messages/fr.json";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Contact";
-const DESCRIPTION = `Reach ${BRAND.agent.name} by phone, email, or the form below, or talk to ${BRAND.siteName} about building something like this for a real business.`;
+const TITLE = "Contact & Book a Call";
+const DESCRIPTION =
+  "Reach the SLIIQQUE Toronto real estate concept by email or form, or ask about a remote buying consultation from Nigeria.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: pageAlternates("/contact", { languages: true }),
+  alternates: pageAlternates("/contact"),
   ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/contact" }),
 };
 

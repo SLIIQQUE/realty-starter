@@ -8,15 +8,15 @@ import ContactForm from "@/components/ContactForm";
 import { IconLock } from "@/components/icons";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Sell a Home";
+const TITLE = "Selling a Home in Toronto";
 const DESCRIPTION =
-  "A seller's journey from prep to closing: marketing plan, pricing strategy, and how to request a free home valuation.";
+  "What adds value before listing, how to price in the Toronto market, and how private and public sales differ.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: pageAlternates("/sell"),
-  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/sell" }),
+  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/sell", ogImage: "sell" }),
 };
 
 const JOURNEY = [

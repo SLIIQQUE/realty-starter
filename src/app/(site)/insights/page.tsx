@@ -16,14 +16,15 @@ const POST_IMAGES = [
   "jb7LfoHr7Hn32s97adnDQZFO5o.jpg",
 ];
 
-const TITLE = "Journal";
-const DESCRIPTION = "Market notes and buyer/seller guidance for the concept portfolio.";
+const TITLE = "Toronto Real Estate Insights";
+const DESCRIPTION =
+  "Market notes, pricing signals and buyer and seller guidance for Toronto and the GTA, written to be read before a decision.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: pageAlternates("/insights"),
-  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/insights" }),
+  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/insights", ogImage: "insights" }),
 };
 
 export default async function BlogPage() {

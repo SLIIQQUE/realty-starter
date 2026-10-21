@@ -4,6 +4,7 @@ import { Logout, useNav } from "@payloadcms/ui";
 import { formatAdminURL } from "payload/shared";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 import { ArrowUpRight, CloseIcon, GridIcon, NavIcon } from "../Icons";
 
@@ -77,6 +78,14 @@ function initials(name: string) {
 export function NavClient({ adminRoute, groups, user }: Props) {
   const pathname = usePathname();
   const { hydrated, navOpen, navRef, setNavOpen, shouldAnimate } = useNav();
+
+  // The collapse control is hidden on desktop, so keep the rail open there.
+  // Payload closes it on mount for every width below 1440px; re-open after
+  // that state settles so the sidebar can never be stranded shut.
+  useEffect(() => {
+    if (navOpen || !window.matchMedia("(min-width: 1025px)").matches) return;
+    setNavOpen(true);
+  }, [navOpen, setNavOpen]);
 
   // `/admin` is a prefix of every admin URL, so the dashboard needs an exact
   // match or it would render as active on every collection and global screen.

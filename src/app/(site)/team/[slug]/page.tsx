@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const agent = await getAgentBySlug(slug);
   if (!agent) return {};
-  const title = agent.name;
-  const description = `${agent.name}, ${agent.title} at ${agent.brokerage}. Sample agent profile for this concept demo.`;
+  const title = `${agent.name}, ${agent.title}`;
+  const description = `${agent.name} is the ${agent.title} in this SLIIQQUE Toronto real estate concept: ${agent.languages?.join(", ") ?? "English"} speaking, covering Toronto and the GTA. Sample profile, not a licensed registrant.`;
   return {
     title,
     description,

@@ -240,6 +240,14 @@ a {
   top: 12px;
 }
 
+/* Desktop keeps the studio rail fixed: hide Payload's collapse control and
+   the rail is forced open in NavClient. Tablets/mobile keep the toggler. */
+@media (min-width: 1025px) {
+  .template-default__nav-toggler-wrapper {
+    display: none;
+  }
+}
+
 .step-nav {
   font-size: 12.5px;
   letter-spacing: 0.01em;

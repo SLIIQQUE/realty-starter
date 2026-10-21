@@ -4,16 +4,18 @@ import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import SplitHeading from "@/components/SplitHeading";
 import { getNeighbourhoods } from "@/lib/content/neighbourhoods";
-import { pageAlternates, pageSocial } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { itemListSchema, pageAlternates, pageSocial, SITE_URL } from "@/lib/seo";
 
-const TITLE = "Neighbourhoods";
-const DESCRIPTION = "Six Toronto and GTA neighbourhoods covered by the concept portfolio.";
+const TITLE = "Toronto Neighbourhood Guides";
+const DESCRIPTION =
+  "Guides to six Toronto neighbourhoods, covering transit, schools and market context for Yorkville, Rosedale, Forest Hill, Leslieville, Liberty Village and The Beaches.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: pageAlternates("/neighbourhoods"),
-  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/neighbourhoods" }),
+  ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/neighbourhoods", ogImage: "neighbourhoods" }),
 };
 
 export default async function NeighborhoodsPage() {
@@ -21,6 +23,16 @@ export default async function NeighborhoodsPage() {
 
   return (
     <main>
+      <JsonLd
+        data={[
+          itemListSchema(
+            "Toronto neighbourhood guides",
+            neighbourhoods.map((n) => ({ name: n.name, url: `/neighbourhoods/${n.slug}` })),
+            SITE_URL,
+            "/neighbourhoods"
+          ),
+        ]}
+      />
       <section className="page-hero page-hero--center">
         <div className="container">
           <div className="stack">

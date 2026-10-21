@@ -5,7 +5,8 @@ import SplitHeading from "@/components/SplitHeading";
 import RollButton from "@/components/RollButton";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
-import { articleSchema, pageAlternates, pageSocial, SITE_URL } from "@/lib/seo";
+import { resolveImageSrc } from "@/lib/content/image";
+import { articleSchema, isoDate, pageAlternates, pageSocial, SITE_URL } from "@/lib/seo";
 import { getPosts, getPostBySlug } from "@/lib/content/posts";
 import { BRAND } from "@/data/brand";
 
@@ -24,7 +25,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: post.title,
     description: post.excerpt,
     alternates: pageAlternates(`/insights/${post.slug}`),
-    ...pageSocial({ title: post.title, description: post.excerpt, path: `/insights/${post.slug}` }),
+    ...pageSocial({
+      title: post.title,
+      description: post.excerpt,
+      path: `/insights/${post.slug}`,
+      type: "article",
+      publishedTime: isoDate(post.date),
+      ogImage: "insights",
+    }),
   };
 }
 
@@ -35,7 +43,14 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <main>
-      <JsonLd data={[articleSchema(post, SITE_URL)]} />
+      <JsonLd
+        data={[
+          articleSchema(
+            { ...post, image: post.heroImg ? resolveImageSrc(post.heroImg) : undefined },
+            SITE_URL
+          ),
+        ]}
+      />
       <section className="page-hero">
         <div className="container">
           <Breadcrumbs

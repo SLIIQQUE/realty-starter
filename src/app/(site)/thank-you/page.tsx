@@ -4,7 +4,7 @@ import ThankYouContent from "./ThankYouContent";
 import { pageAlternates } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  alternates: pageAlternates("/thank-you", { languages: true }),
+  alternates: pageAlternates("/thank-you"),
   // Post-submission confirmation page, not a destination anyone should find via search.
   robots: { index: false, follow: true },
 };

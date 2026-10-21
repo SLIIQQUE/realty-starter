@@ -3,6 +3,7 @@ import { getListings } from "@/lib/content/listings";
 import { getNeighbourhoods } from "@/lib/content/neighbourhoods";
 import { getPosts } from "@/lib/content/posts";
 import { getAgents } from "@/lib/content/agents";
+import { resolveImageSrc } from "@/lib/content/image";
 import { SITE_URL } from "@/lib/seo";
 
 /**
@@ -13,6 +14,18 @@ import { SITE_URL } from "@/lib/seo";
  * constant by hand when static page content actually changes.
  */
 const STATIC_CONTENT_LAST_UPDATED = new Date("2026-10-20");
+
+/** The French site is a middleware rewrite of the same routes (`src/middleware.ts`), so every
+ * canonical URL has a working `/fr` counterpart. Declaring the pair in the sitemap as
+ * `xhtml:link` alternates is the sitemap-level equivalent of the page-level hreflang tags. */
+const languageAlternates = (path: string) => ({
+  alternates: {
+    languages: {
+      "en-CA": `${SITE_URL}${path}`,
+      "fr-CA": `${SITE_URL}/fr${path}`,
+    },
+  },
+});
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [properties, neighbourhoods, posts, agents] = await Promise.all([
@@ -28,6 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes = [
     "",
     "/listings",
+    "/nigerian-buyers",
     "/neighbourhoods",
     "/resources",
     "/resources/buyers-guide",
@@ -53,15 +67,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: STATIC_CONTENT_LAST_UPDATED,
+    ...languageAlternates(path),
   }));
 
   // Listings, neighbourhoods and agents carry no real modified-date field in either the static
   // data or the CMS mapping (see src/lib/content/*.ts) — omitting `lastModified` for them is
   // more honest than fabricating one, since Next/Google treat a missing value as "unknown," not
   // "never," and `lastModified` is optional on every sitemap entry.
-  const propertyRoutes = properties.map((p) => ({ url: `${SITE_URL}/listings/${p.slug}` }));
-  const neighborhoodRoutes = neighbourhoods.map((n) => ({ url: `${SITE_URL}/neighbourhoods/${n.slug}` }));
-  const teamRoutes = agents.map((a) => ({ url: `${SITE_URL}/team/${a.slug}` }));
+  //
+  // `images` is the image-sitemap extension: it points Google at the hero photo of each detail
+  // page, which is what makes those photos eligible for image search rather than only the page.
+  const propertyRoutes = properties.map((p) => ({
+    url: `${SITE_URL}/listings/${p.slug}`,
+    images: [`${SITE_URL}${resolveImageSrc(p.img)}`],
+    ...languageAlternates(`/listings/${p.slug}`),
+  }));
+  const neighborhoodRoutes = neighbourhoods.map((n) => ({
+    url: `${SITE_URL}/neighbourhoods/${n.slug}`,
+    images: [`${SITE_URL}${resolveImageSrc(n.heroImg)}`],
+    ...languageAlternates(`/neighbourhoods/${n.slug}`),
+  }));
+  const teamRoutes = agents.map((a) => ({
+    url: `${SITE_URL}/team/${a.slug}`,
+    ...languageAlternates(`/team/${a.slug}`),
+  }));
 
   // Posts are the one content type with a genuine date already attached.
   const postRoutes = posts
@@ -70,6 +99,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       return {
         url: `${SITE_URL}/insights/${p.slug}`,
         lastModified: Number.isNaN(parsed.getTime()) ? undefined : parsed,
+        images: p.heroImg ? [`${SITE_URL}${resolveImageSrc(p.heroImg)}`] : undefined,
+        ...languageAlternates(`/insights/${p.slug}`),
       };
     });
 

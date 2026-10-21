@@ -6,8 +6,9 @@ import RollButton from "@/components/RollButton";
 import ArticleToc, { type TocItem } from "@/components/ArticleToc";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "The Buyer's Guide";
-const DESCRIPTION = "A straightforward walkthrough of the buying process, from first conversation to closing.";
+const TITLE = "Toronto Home Buyer's Guide";
+const DESCRIPTION =
+  "A step-by-step Toronto buying guide: pre-approval, shortlisting, offers, inspections, closing costs and land transfer tax.";
 
 export const metadata: Metadata = {
   title: TITLE,

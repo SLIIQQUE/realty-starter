@@ -15,12 +15,12 @@ import { pageAlternates, pageSocial } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   const agent = (await getAgentBySlug("priya-mehta"))!;
-  const title = "About";
-  const description = `Meet ${agent.name} and learn what the ${BRAND.siteName} concept is, who built it, and why it exists.`;
+  const title = "About the Toronto Concept";
+  const description = `Meet ${agent.name} and the team behind the ${BRAND.siteName} Toronto real estate concept: the standards, the stack, and why it exists.`;
   return {
     title,
     description,
-    alternates: pageAlternates("/about", { languages: true }),
+    alternates: pageAlternates("/about"),
     ...pageSocial({ title, description, path: "/about" }),
   };
 }

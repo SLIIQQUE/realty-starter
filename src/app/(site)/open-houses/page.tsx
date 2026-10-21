@@ -5,8 +5,9 @@ import PropertyStackCard from "@/components/PropertyStackCard";
 import { getListings } from "@/lib/content/listings";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Open Houses";
-const DESCRIPTION = "Sample properties with a scheduled open house.";
+const TITLE = "Toronto Open Houses";
+const DESCRIPTION =
+  "Sample Toronto and GTA properties with scheduled open houses, plus how to arrange a private viewing instead.";
 
 export const metadata: Metadata = {
   title: TITLE,

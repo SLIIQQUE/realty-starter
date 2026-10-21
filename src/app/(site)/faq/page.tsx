@@ -10,13 +10,14 @@ import { getLocale } from "@/lib/i18n/getLocale";
 import en from "@/messages/en.json";
 import fr from "@/messages/fr.json";
 
-const TITLE = "FAQs";
-const DESCRIPTION = "Questions about this concept, and about building something similar for a real business.";
+const TITLE = "Toronto Real Estate FAQs";
+const DESCRIPTION =
+  "Answers on buying and selling in Toronto, buying remotely from Nigeria, costs, timelines, and what this concept site is.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  alternates: pageAlternates("/faq", { languages: true }),
+  alternates: pageAlternates("/faq"),
   ...pageSocial({ title: TITLE, description: DESCRIPTION, path: "/faq" }),
 };
 

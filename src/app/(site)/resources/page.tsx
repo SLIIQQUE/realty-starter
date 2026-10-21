@@ -5,8 +5,9 @@ import SplitHeading from "@/components/SplitHeading";
 import RollButton from "@/components/RollButton";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Resources";
-const DESCRIPTION = "Guides, a mortgage calculator, a valuation request flow, and open houses.";
+const TITLE = "Toronto Real Estate Resources";
+const DESCRIPTION =
+  "Toronto buyer and seller guides, a Canadian mortgage calculator and an Ontario land transfer tax calculator, in one place.";
 
 export const metadata: Metadata = {
   title: TITLE,

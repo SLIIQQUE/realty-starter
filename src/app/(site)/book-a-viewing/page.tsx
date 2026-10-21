@@ -4,8 +4,9 @@ import SplitHeading from "@/components/SplitHeading";
 import ViewingRequestForm from "@/components/ViewingRequestForm";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Book a Viewing";
-const DESCRIPTION = "Request a private viewing for any listing, or a general consultation with SLIIQQUE.";
+const TITLE = "Book a Toronto Property Viewing";
+const DESCRIPTION =
+  "Book a private showing in Toronto or the GTA, or arrange a guided video walkthrough if you are buying from Nigeria or abroad.";
 
 export const metadata: Metadata = {
   title: TITLE,

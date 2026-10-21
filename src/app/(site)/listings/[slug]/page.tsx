@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const property = await getListingBySlug(slug);
   if (!property) return {};
-  const title = property.name;
-  const description = `${property.name}, ${property.loc}, ${property.price}. Sample concept listing.`;
+  const title = `${property.name}, ${property.loc}`;
+  const description = `${property.name} in ${property.loc}: ${property.bed} bed, ${property.bath} bath, ${property.sqft} sq ft, listed at ${property.price} (${property.status}). Photos, features and viewing details for this sample Toronto listing.`;
   return {
     title,
     description,
@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description,
       path: `/listings/${property.slug}`,
       image: property.img ? `${SITE_URL}${resolveImageSrc(property.img)}` : undefined,
+      imageAlt: `${property.name}, ${property.loc}, Toronto`,
     }),
   };
 }

@@ -8,9 +8,9 @@ import ContactForm from "@/components/ContactForm";
 import { IconLock } from "@/components/icons";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Buy a Home";
+const TITLE = "Buying a Home in Toronto";
 const DESCRIPTION =
-  "A step-by-step guide to buying a home in Toronto, from pre-approval to closing, plus the costs to budget for beyond the purchase price.";
+  "The Toronto buying process from pre-approval to closing: costs beyond the purchase price, offers, conditions, and what to budget.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -169,7 +169,9 @@ export default function BuyPage() {
                 Getting pre-approved early tells you what you can realistically afford and strengthens any offer you
                 make. Try the{" "}
                 <Link href="/tools/mortgage-calculator">mortgage calculator</Link> to estimate monthly payments before
-                you start touring.
+                you start touring. Buying from Nigeria? The{" "}
+                <Link href="/nigerian-buyers">remote buying route</Link> covers video tours, non-resident financing and
+                moving funds across currencies.
               </Reveal>
             </div>
             <div className="feature__vr" />
