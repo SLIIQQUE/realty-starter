@@ -40,6 +40,7 @@ export default buildConfig({
   secret: process.env.PAYLOAD_SECRET || "",
   admin: {
     user: Users.slug,
+    theme: "light",
     avatar: {
       Component: "/src/payload/components/AdminAvatar#default",
     },

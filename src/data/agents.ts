@@ -17,6 +17,7 @@ export type Agent = {
   brokerage: string;
   languages: string[];
   designations: string[];
+  /** Kept under `phone` for the Payload schema; the value is the SLIIQQUE WhatsApp number. */
   phone: string;
   email: string;
   socialLinks: { instagram?: string; x?: string; linkedin?: string };
@@ -43,7 +44,7 @@ export const AGENTS: Agent[] = [
     brokerage: BRAND.agent.brokerage,
     languages: [...BRAND.agent.languages],
     designations: [...BRAND.agent.designations],
-    phone: BRAND.phone,
+    phone: BRAND.whatsappNumber,
     email: BRAND.email,
     socialLinks: {
       instagram: BRAND.social.instagram,
@@ -62,7 +63,7 @@ export const AGENTS: Agent[] = [
     brokerage: BRAND.agent.brokerage,
     languages: ["English"],
     designations: [],
-    phone: BRAND.phone,
+    phone: BRAND.whatsappNumber,
     email: BRAND.email,
     socialLinks: {},
     displayOrder: 2,

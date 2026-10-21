@@ -28,7 +28,7 @@ export const SITE_SETTINGS: SiteSettings = {
   siteName: BRAND.siteName,
   logo: "/brand",
   colours: "See design tokens in src/app/tokens.css, not duplicated here.",
-  phone: BRAND.phone,
+  phone: BRAND.whatsappNumber,
   email: BRAND.email,
   address: BRAND.officeAddress,
   hours: BRAND.hours,

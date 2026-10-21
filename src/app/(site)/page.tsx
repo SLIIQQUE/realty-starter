@@ -447,7 +447,7 @@ export default async function HomePage() {
               </Reveal>
               <Reveal as="div" className="quote-box">
                 <Image className="quote-box__mark" width={50} height={50} src="/images/WKagG04AvCVspRdazfPUvdxrnY.svg" alt="" />
-                <p>&quot;Call, text, or email: I reply the same way you reach out, usually the same day.&quot;</p>
+                <p>&quot;WhatsApp or email: I reply the same way you reach out, usually the same day.&quot;</p>
               </Reveal>
               <Reveal as="div" className="mini-stats">
                 <div>
@@ -645,9 +645,9 @@ export default async function HomePage() {
           </div>
           <Reveal as="div" className="mini-stats" style={{ maxWidth: 760, margin: "40px auto 0" }}>
             <div>
-              <strong>{t.home.contactSection.callText}</strong>
+              <strong>{t.home.contactSection.whatsappText}</strong>
               <span>
-                <a href={BRAND.phoneHref}>{BRAND.phone}</a>
+                <a href={BRAND.whatsappHref}>{BRAND.whatsappNumber}</a>
               </span>
             </div>
             <div>

@@ -33,7 +33,7 @@ Do not launch a real client site until every ⚠️ is resolved and every 📋 i
 - ✅ Responsive: mobile-first CSS with breakpoints at 809px/1199px (`src/styles/tokens.css`, `pages.css`)
 - 📋 Cross-browser check (Chrome/Safari/Firefox/Edge), not something a build can self-certify; do a manual pass
 - ✅ Navigation + active states: `Header.tsx`/`Footer.tsx`, `aria-current="page"` styling
-- ✅ Sticky mobile Call/Text/Email bar: `StickyMobileBar.tsx`, mobile-only via CSS media query
+- ✅ Sticky mobile WhatsApp/Email bar: `StickyMobileBar.tsx`, mobile-only via CSS media query
 - ✅ Buttons/links have hover + focus-visible states: `src/styles/base.css`
 - ✅ Empty states: listings filter empty-state with a "get listing alerts" form (`PropertiesExplorer.tsx`)
 - ✅ Custom 404 and 500: `not-found.tsx` and `src/app/global-error.tsx`, both with a link back to home
@@ -192,7 +192,7 @@ secondary, audience-led market, and the metadata/preview/schema layer was rebuil
 ## 8.11 Analytics and tracking
 
 - ⚠️ Analytics: GA4 wired, consent-gated; needs `NEXT_PUBLIC_GA_ID` to activate
-- ✅ Conversion events: `generate_lead` (per form type, fired on `/thank-you`), `click_to_call`/`click_to_text`/`click_to_email` on header/footer/sticky-bar phone links
+- ✅ Conversion events: `generate_lead` (per form type, fired on `/thank-you`), `click_to_whatsapp`/`click_to_email` on footer/sticky-bar contact links
 - ⚠️ Search Console: needs `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` + manual verification
 - 📋 Internal traffic exclusion: configure in GA4's own admin once a real `NEXT_PUBLIC_GA_ID` exists
 - 📋 Ad pixels: none added (out of scope unless a real client requests one)

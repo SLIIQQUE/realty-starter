@@ -45,7 +45,7 @@ async function staticFallback(): Promise<SiteSettings> {
     return {
       siteName: BRAND.siteName,
       logo: "",
-      phone: BRAND.phone,
+      phone: BRAND.whatsappNumber,
       email: BRAND.email,
       address: BRAND.officeAddress,
       hours: BRAND.hours,

@@ -62,7 +62,7 @@ export default async function AccessibilityPage() {
             <h3>3. Tell us about a problem</h3>
             <p>
               If you find a page or feature on this site that&apos;s difficult to use with assistive technology,
-              please contact us at {BRAND.email} or {BRAND.phone}, and describe the page and the issue you ran
+              please contact us at {BRAND.email} or on WhatsApp at {BRAND.whatsappNumber}, and describe the page and the issue you ran
               into. We aim to acknowledge accessibility reports within two business days.
             </p>
           </article>

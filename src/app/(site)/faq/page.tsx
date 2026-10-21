@@ -57,7 +57,10 @@ export default async function FaqsPage() {
             </div>
             <div className="faq-cta__right">
               <p className="t-sm">{BRAND.email}</p>
-              <p className="ph">{BRAND.phone}</p>
+              <p className="t-sm">WhatsApp</p>
+              <p className="ph">
+                <a href={BRAND.whatsappHref}>{BRAND.whatsappNumber}</a>
+              </p>
             </div>
           </Reveal>
         </div>

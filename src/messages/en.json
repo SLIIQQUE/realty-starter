@@ -90,7 +90,7 @@
     },
     "how": {
       "eyebrow": "How it works",
-      "heading": "A simple path from first call to closing.",
+      "heading": "A simple path from first conversation to closing.",
       "lead": "No rushed decisions, no unnecessary delays. The concept keeps the next step clear and handles the details with care.",
       "noteChip": "Concept flow",
       "noteHeading": "No rushed decisions. No noisy handoff.",
@@ -180,7 +180,7 @@
     "contactSection": {
       "eyebrow": "Get in touch",
       "headingTemplate": "Reach {name} directly.",
-      "callText": "Call / Text",
+      "whatsappText": "WhatsApp",
       "emailText": "Email",
       "officeText": "Office",
       "button": "Send a Message"
@@ -190,11 +190,11 @@
     "eyebrow": "Get in touch",
     "headingMain": "Let's talk about your",
     "headingEm": "move.",
-    "leadTemplate": "Whether you're buying, selling, or just curious what your home is worth, tell {name} what you're looking to do: call, text, or use the form below, whichever you prefer.",
+    "leadTemplate": "Whether you're buying, selling, or just curious what your home is worth, tell {name} what you're looking to do: message on WhatsApp, email, or use the form below, whichever you prefer.",
     "officeDetails": "Office details",
     "officeLabel": "Office",
     "hoursLabel": "Hours",
-    "phoneLabel": "Phone / text",
+    "whatsappLabel": "WhatsApp",
     "privacyStrong": "Your privacy is protected",
     "privacyText": "Every enquiry is handled with discretion and recorded with your consent: see the",
     "privacyLinkText": "Privacy Policy",
@@ -251,7 +251,7 @@
       "eyebrow": "Viewing requested",
       "titleMain": "We'll confirm your",
       "titleEm": "viewing.",
-      "body": "We'll follow up by email or phone shortly to confirm a time that works for you."
+      "body": "We'll follow up by email or WhatsApp shortly to confirm a time that works for you."
     },
     "listingEnquiry": {
       "eyebrow": "Enquiry sent",

@@ -257,7 +257,7 @@ export function realEstateAgentSchema(siteUrl: string) {
     "@id": `${siteUrl}/#agent`,
     name: BRAND.agent.name,
     url: siteUrl,
-    telephone: BRAND.phone,
+    telephone: BRAND.whatsappNumber,
     email: BRAND.email,
     image: `${siteUrl}/brand/sliiqque-mark.png`,
     areaServed: [

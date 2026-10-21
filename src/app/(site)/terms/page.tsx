@@ -83,7 +83,7 @@ export default async function TermsConditionsPage() {
 
             <h3>8. Contact</h3>
             <p>
-              {BRAND.studioName} Studio · {BRAND.hq} · {BRAND.email} · {BRAND.phone}.
+              {BRAND.studioName} Studio · {BRAND.hq} · {BRAND.email} · WhatsApp {BRAND.whatsappNumber}.
             </p>
           </article>
         </div>

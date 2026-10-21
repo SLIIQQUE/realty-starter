@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import SplitHeading from "@/components/SplitHeading";
 import ContactForm from "@/components/ContactForm";
 import Accordion, { type AccordionItem } from "@/components/Accordion";
-import { IconClock, IconLock, IconPhone, IconPin } from "@/components/icons";
+import { IconClock, IconLock, IconPin, IconWhatsApp } from "@/components/icons";
 import { BRAND } from "@/data/brand";
 import { getFaqs } from "@/lib/content/faqs";
 import { getLocale } from "@/lib/i18n/getLocale";
@@ -12,9 +12,9 @@ import en from "@/messages/en.json";
 import fr from "@/messages/fr.json";
 import { pageAlternates, pageSocial } from "@/lib/seo";
 
-const TITLE = "Contact & Book a Call";
+const TITLE = "Contact & WhatsApp";
 const DESCRIPTION =
-  "Reach the SLIIQQUE Toronto real estate concept by email or form, or ask about a remote buying consultation from Nigeria.";
+  "Reach the SLIIQQUE Toronto real estate concept on WhatsApp or by email and form, or ask about a remote buying consultation from Nigeria.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -58,7 +58,7 @@ export default async function ContactPage() {
                 <p className="role">
                   {BRAND.agent.title} · {BRAND.agent.brokerage}
                 </p>
-                <p className="q">&quot;Call, text, or email; I reply the same way you reach out.&quot;</p>
+                <p className="q">&quot;WhatsApp or email; I reply the same way you reach out.&quot;</p>
                 <p className="resp">{BRAND.hours}</p>
               </div>
               <div className="office-card">
@@ -83,11 +83,13 @@ export default async function ContactPage() {
                 </div>
                 <div className="office-row">
                   <span className="office-row__icon">
-                    <IconPhone />
+                    <IconWhatsApp />
                   </span>
                   <div>
-                    <span className="eyebrow">{t.contact.phoneLabel}</span>
-                    <span className="v">{BRAND.phone}</span>
+                    <span className="eyebrow">{t.contact.whatsappLabel}</span>
+                    <span className="v">
+                      <a href={BRAND.whatsappHref}>{BRAND.whatsappNumber}</a>
+                    </span>
                   </div>
                 </div>
               </div>

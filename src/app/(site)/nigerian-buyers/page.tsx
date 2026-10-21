@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
 const STEPS = [
   {
-    title: "Discovery call",
+    title: "Discovery chat",
     body: "Thirty minutes on WhatsApp or Zoom, timed for Lagos and Abuja (WAT) as well as Toronto (ET). Budget, timeline, and whether this is a home to live in, a rental, or both.",
   },
   {
@@ -50,7 +50,7 @@ const STEPS = [
   },
   {
     title: "Video walkthroughs",
-    body: "A scheduled, room-by-room video tour, plus a second call at a different time of day so you see the light, the street and the noise for yourself.",
+    body: "A scheduled, room-by-room video tour, plus a second walkthrough at a different time of day so you see the light, the street and the noise for yourself.",
   },
   {
     title: "Verify and finance",
@@ -229,10 +229,10 @@ export default async function NigerianBuyersPage() {
               </Reveal>
               <Reveal as="div" className="steps__note">
                 <span className="chip">Time zones</span>
-                <h3>Lagos and Toronto, same call</h3>
+                <h3>Lagos and Toronto, same conversation</h3>
                 <p>
-                  Toronto is five or six hours behind Lagos depending on daylight saving. Calls are scheduled in both
-                  calendars so nothing lands at an unreasonable hour.
+                  Toronto is five or six hours behind Lagos depending on daylight saving. Sessions are scheduled in
+                  both calendars so nothing lands at an unreasonable hour.
                 </p>
               </Reveal>
             </div>
@@ -412,8 +412,15 @@ export default async function NigerianBuyersPage() {
               <div className="side-card">
                 <p className="eyebrow">What happens next</p>
                 <p className="t-sm muted" style={{ marginTop: 16 }}>
-                  Every enquiry is read and answered by email within 24 hours. If a call is easier, send a WhatsApp
-                  number and two windows that suit you in West Africa Time.
+                  Every enquiry is read and answered by email within 24 hours. If a conversation is easier, message
+                  us on{" "}
+                  <a
+                    href={BRAND.whatsappHref}
+                    style={{ textDecoration: "underline", textUnderlineOffset: 3 }}
+                  >
+                    WhatsApp at {BRAND.whatsappNumber}
+                  </a>{" "}
+                  and we&apos;ll agree a time that works in West Africa Time.
                 </p>
                 <p className="t-sm muted" style={{ marginTop: 12 }}>
                   Prefer email first? Write to{" "}

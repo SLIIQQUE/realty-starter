@@ -89,7 +89,7 @@ export default async function TeamMemberPage({ params }: PageProps) {
                 <p className="eyebrow">Contact</p>
                 <ul style={{ marginTop: 16, color: "var(--c-muted)" }}>
                   <li>
-                    <a href={`tel:${agent.phone.replace(/[^+\d]/g, "")}`}>{agent.phone}</a>
+                    <a href={BRAND.whatsappHref}>WhatsApp: {BRAND.whatsappNumber}</a>
                   </li>
                   <li style={{ marginTop: 8 }}>
                     <a href={`mailto:${agent.email}`}>{agent.email}</a>

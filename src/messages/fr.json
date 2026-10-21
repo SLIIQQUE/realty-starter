@@ -90,7 +90,7 @@
     },
     "how": {
       "eyebrow": "Comment ça fonctionne",
-      "heading": "Un parcours simple du premier appel à la clôture.",
+      "heading": "Un parcours simple de la première conversation à la clôture.",
       "lead": "Aucune décision précipitée, aucun délai inutile. Le concept garde la prochaine étape claire et traite chaque détail avec soin.",
       "noteChip": "Déroulement du concept",
       "noteHeading": "Aucune décision précipitée. Aucune transition brouillonne.",
@@ -180,7 +180,7 @@
     "contactSection": {
       "eyebrow": "Restons en contact",
       "headingTemplate": "Contactez {name} directement.",
-      "callText": "Appel / Texto",
+      "whatsappText": "WhatsApp",
       "emailText": "Courriel",
       "officeText": "Bureau",
       "button": "Envoyer un message"
@@ -190,11 +190,11 @@
     "eyebrow": "Restons en contact",
     "headingMain": "Parlons de votre",
     "headingEm": "déménagement.",
-    "leadTemplate": "Que vous achetiez, vendiez, ou soyez simplement curieux de connaître la valeur de votre propriété, dites à {name} ce que vous recherchez : par appel, texto, ou le formulaire ci-dessous, selon votre préférence.",
+    "leadTemplate": "Que vous achetiez, vendiez, ou soyez simplement curieux de connaître la valeur de votre propriété, dites à {name} ce que vous recherchez : par WhatsApp, courriel, ou le formulaire ci-dessous, selon votre préférence.",
     "officeDetails": "Détails du bureau",
     "officeLabel": "Bureau",
     "hoursLabel": "Heures",
-    "phoneLabel": "Téléphone / texto",
+    "whatsappLabel": "WhatsApp",
     "privacyStrong": "Votre vie privée est protégée",
     "privacyText": "Chaque demande est traitée avec discrétion et enregistrée avec votre consentement : consultez la",
     "privacyLinkText": "Politique de confidentialité",
@@ -251,7 +251,7 @@
       "eyebrow": "Visite demandée",
       "titleMain": "Nous allons confirmer votre",
       "titleEm": "visite.",
-      "body": "Nous vous recontacterons par courriel ou par téléphone sous peu pour confirmer un moment qui vous convient."
+      "body": "Nous vous recontacterons par courriel ou WhatsApp sous peu pour confirmer un moment qui vous convient."
     },
     "listingEnquiry": {
       "eyebrow": "Demande envoyée",

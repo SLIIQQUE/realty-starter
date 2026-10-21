@@ -26,7 +26,7 @@ export const Agents: CollectionConfig = {
     { name: "brokerage", type: "text" },
     textArrayField("languages", "Languages"),
     textArrayField("designations", "Designations"),
-    { name: "phone", type: "text" },
+    { name: "phone", type: "text", label: "WhatsApp number" },
     { name: "email", type: "text" },
     socialLinksField,
     { name: "displayOrder", type: "number", admin: { position: "sidebar" } },

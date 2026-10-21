@@ -74,6 +74,16 @@ export function IconMessage() {
   );
 }
 
+/** Outline WhatsApp mark, drawn to match the other stroke-based contact icons. */
+export function IconWhatsApp() {
+  return (
+    <svg viewBox="0 0 24 24">
+      <path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3A8.5 8.5 0 1 1 20.5 11.6z" />
+      <path d="M8.9 7.9c.2 0 .4.1.5.4l.8 1.8c.1.2 0 .4-.1.6l-.5.6c-.1.2-.2.3 0 .6.4.7 1 1.4 1.7 1.9.3.2.4.2.6 0l.6-.6c.2-.1.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 1-.8 1.7-1.7 1.7-2.9 0-6.2-3.3-6.2-6.2 0-.9.7-1.7 1.5-1.7z" />
+    </svg>
+  );
+}
+
 export function IconMail() {
   return (
     <svg viewBox="0 0 24 24">

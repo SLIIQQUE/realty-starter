@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   publisher: BRAND.studioName,
   category: "Real estate",
   alternates: { canonical: SITE_URL },
-  formatDetection: { telephone: true, email: true, address: false },
+  formatDetection: { telephone: false, email: true, address: false },
   verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
     ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
     : undefined,

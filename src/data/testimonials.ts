@@ -50,7 +50,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Robert F.",
     role: "seller",
     quote:
-      "The valuation request didn't come back with a fake instant number. It came back with Priya calling us to talk through comparable Rosedale sales. That mattered more than I expected.",
+      "The valuation request didn't come back with a fake instant number. It came back with Priya walking us through comparable Rosedale sales on WhatsApp. That mattered more than I expected.",
     source: "Client email",
     date: "April 2026",
     photo: "arOA8M7RvS1X2YkOpgxSv4FgGyY.jpg",

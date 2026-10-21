@@ -94,7 +94,7 @@ export default async function PrivacyPolicyPage() {
 
             <h3>8. Contact</h3>
             <p>
-              {BRAND.studioName} Studio · Attn: {BRAND.founder} · {BRAND.hq} · {BRAND.email} · {BRAND.phone}.
+              {BRAND.studioName} Studio · Attn: {BRAND.founder} · {BRAND.hq} · {BRAND.email} · WhatsApp {BRAND.whatsappNumber}.
             </p>
           </article>
         </div>

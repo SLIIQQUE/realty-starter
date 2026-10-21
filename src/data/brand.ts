@@ -14,10 +14,11 @@ export const BRAND = {
   conceptNotice:
     "This is a concept marketing site built by SLIIQQUE Studio to demonstrate real-estate web design and engineering capability for the Canadian realtor vertical. The agent, brokerage, licence number and listings shown are fictional, for demonstration only; SLIIQQUE does not hold a real-estate licence or broker clients directly.",
   email: "hello@sliiqque.space",
-  phone: "+1 416 555 0148",
-  phoneHref: "tel:+14165550148",
-  smsHref: "sms:+14165550148",
-  whatsappHref: "https://wa.me/14165550148",
+  // WhatsApp is the primary contact channel across this site (COMPANY.md is the source of
+  // truth for the number). No call or SMS links: most prospects reach SLIIQQUE from another
+  // continent, so every contact CTA opens WhatsApp instead.
+  whatsappNumber: "+234 704 100 0085",
+  whatsappHref: "https://wa.me/2347041000085",
   social: {
     instagram: "https://www.instagram.com/sliiqque",
     x: "https://x.com/sliiqque",

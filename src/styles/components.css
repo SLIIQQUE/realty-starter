@@ -403,7 +403,7 @@
 
 /* ------------------------------------------------------- STICKY MOBILE BAR */
 .sticky-mobile-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 45; background: var(--c-surface-raised); border-top: 1px solid var(--c-white-10); }
-.sticky-mobile-bar__inner { display: grid; grid-template-columns: repeat(3, 1fr); }
+.sticky-mobile-bar__inner { display: grid; grid-template-columns: repeat(2, 1fr); }
 .sticky-mobile-bar__link { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; height: 56px; color: var(--c-white); font: 600 var(--fs-xs)/1 var(--font-body); letter-spacing: var(--ls-xs); text-transform: uppercase; border-right: 1px solid var(--c-white-10); transition: background-color .25s; }
 .sticky-mobile-bar__link:last-child { border-right: 0; }
 .sticky-mobile-bar__link:active { background: rgba(255,255,255,.08); }

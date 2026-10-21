@@ -96,7 +96,7 @@ export default function ViewingRequestForm() {
         <button className="btn-submit" type="submit" disabled={status === "sending"}>
           {status === "sending" ? "Sending..." : "Request a viewing"}
         </button>
-        <p>The SLIIQQUE team will confirm by email or phone.</p>
+        <p>The SLIIQQUE team will confirm by email or WhatsApp.</p>
       </div>
       {status === "error" && (
         <p className="t-sm field--full" style={{ color: "#f87171" }}>

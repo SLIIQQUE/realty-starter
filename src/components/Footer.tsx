@@ -105,8 +105,8 @@ export default function Footer({ locale = "en" }: FooterProps) {
               <a href={`mailto:${BRAND.email}`} onClick={() => trackEvent("click_to_email", {})}>
                 {BRAND.email}
               </a>
-              <a href={BRAND.phoneHref} onClick={() => trackEvent("click_to_call", {})}>
-                {BRAND.phone}
+              <a href={BRAND.whatsappHref} onClick={() => trackEvent("click_to_whatsapp", {})}>
+                WhatsApp: {BRAND.whatsappNumber}
               </a>
               <p>{BRAND.hq}</p>
               <a href={BRAND.parentSiteUrl} rel="noopener">
@@ -197,7 +197,11 @@ export default function Footer({ locale = "en" }: FooterProps) {
                 <path d="M17.8 3h3l-6.6 7.5L22 21h-6.1l-4.8-6.3L5.6 21h-3l7-8L2 3h6.2l4.3 5.7zm-1 16.2h1.7L7.3 4.7H5.5z" />
               </svg>
             </a>
-            <a href={BRAND.whatsappHref} aria-label="WhatsApp">
+            <a
+              href={BRAND.whatsappHref}
+              aria-label="WhatsApp"
+              onClick={() => trackEvent("click_to_whatsapp", {})}
+            >
               <svg viewBox="0 0 24 24">
                 <path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 2a8 8 0 0 1 6.9 12.1l-.3.5.6 2.3-2.4-.7-.5.3A8 8 0 1 1 12 4zm-3.1 3.9c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.1 1.8 2.9 4.5 4 2.2.9 2.7.7 3.1.7.6 0 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4-.3-.1-1.9-.9-2.1-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.4-.5-.6-.5z" />
               </svg>

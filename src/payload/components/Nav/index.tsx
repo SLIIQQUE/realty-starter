@@ -5,8 +5,9 @@ import { NavClient } from "./NavClient";
 
 /**
  * Replaces Payload's default nav with the SLIIQQUE "studio rail": grouped,
- * icon-led navigation in the brand's deep-green palette, plus a persistent
- * live-site link and account card. Payload still owns all routing, mobile
+ * icon-led navigation on the brand's near-black surface, with orange active
+ * states and a persistent live-site link and account card. Payload still owns
+ * all routing, mobile
  * open/close state and permissions; this only changes the presentation.
  */
 export default function AdminNav(props: ServerProps) {

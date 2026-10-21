@@ -10,7 +10,7 @@ export const SiteSettings: GlobalConfig = {
   fields: [
     { name: "siteName", type: "text" },
     { name: "logo", type: "upload", relationTo: "media" },
-    { name: "phone", type: "text" },
+    { name: "phone", type: "text", label: "WhatsApp number" },
     { name: "email", type: "text" },
     { name: "address", type: "text" },
     { name: "hours", type: "text" },
