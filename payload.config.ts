@@ -2,6 +2,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { postgresAdapter } from "@payloadcms/db-postgres";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
+import { vercelBlobStorage } from "@payloadcms/storage-vercel-blob";
 import { buildConfig } from "payload";
 
 import { Agents } from "./src/payload/collections/Agents";
@@ -87,6 +88,20 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URI || "",
     },
   }),
+  /**
+   * Without this, the Media collection's `upload: true` falls back to Payload's
+   * default local-disk storage. That works in local dev (files land in ./media/),
+   * but Vercel's serverless functions have no persistent filesystem: anything
+   * uploaded 404s in production at /api/media/file/*. If BLOB_READ_WRITE_TOKEN
+   * is unset, the plugin itself falls back to local storage, so local CMS
+   * testing without Blob configured still works.
+   */
+  plugins: [
+    vercelBlobStorage({
+      collections: { media: true },
+      token: process.env.BLOB_READ_WRITE_TOKEN,
+    }),
+  ],
   typescript: {
     outputFile: path.resolve(dirname, "payload-types.ts"),
   },
